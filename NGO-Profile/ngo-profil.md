@@ -54,6 +54,6 @@ Volunteers can participate in:
 
 ## Contact Information
 
-**Email:**hopebridge@example.org
+**Email:** hopebridge@example.org
 
 **Location:** Chennai, Tamil Nadu, India
