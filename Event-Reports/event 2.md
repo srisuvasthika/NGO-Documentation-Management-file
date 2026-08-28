@@ -2,7 +2,7 @@
 
 ## Event Name
 
-Education Awareness Camp
+Education Awareness Camp🧑‍🎓
 
 ## Date
 
