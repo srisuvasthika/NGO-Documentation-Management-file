@@ -1,4 +1,4 @@
-# Event Report 1: Tree Plantation Drive
+# Event Report 1: Tree Plantation Drive 🌲
 
 ## Event Details
 
