@@ -1,56 +1,39 @@
-# Event Report: Tree Plantation Drive
+# Event Report 1: Tree Plantation Drive
 
-## 1. Event Name
+## Event Details
 
-Tree Plantation Drive
+| Item | Details |
+|---|---|
+| Event Name | Tree Plantation Drive |
+| Date | 15 August 2026 |
+| Location | Community Park, Chennai |
+| Organized By | HopeBridge Foundation |
+| Participants | Volunteers and community members |
 
-## 2. Date
+## Objective
 
-15 August 2026
+The main objective of the event was to encourage environmental awareness and promote tree planting in the local community.
 
-## 3. Location
+## Activities Conducted
 
-Chennai, Tamil Nadu
+- Volunteers planted trees in the community park.
+- Participants were educated about the importance of trees.
+- The team discussed environmental protection.
+- Volunteers cleaned the surrounding area.
 
-## 4. Organized By
+## Outcomes
 
-HopeBridge Foundation
+- Increased awareness about environmental protection.
+- Trees were planted in the community park.
+- Community members participated in the activity.
+- Volunteers gained experience in organizing social activities.
 
-## 5. Objective
+## Challenges
 
-The main objective of the event was to encourage environmental awareness and promote tree planting among students, volunteers, and members of the local community.
+- Limited number of planting materials.
+- Hot weather affected the duration of the activity.
+- More volunteers were needed for the cleanup activity.
 
-## 6. Participants
+## Conclusion
 
-The event was attended by:
-
-- NGO volunteers
-- College students
-- Local community members
-- NGO coordinators
-
-## 7. Activities Conducted
-
-- Awareness session about the importance of trees
-- Distribution of saplings
-- Tree plantation
-- Cleaning of the surrounding area
-- Discussion about environmental protection
-
-## 8. Outcome
-
-The event helped participants understand the importance of protecting the environment. Several saplings were planted, and volunteers were encouraged to continue environmental activities.
-
-## 9. Challenges
-
-- Limited availability of planting space
-- Coordinating all volunteers
-- Arranging sufficient saplings
-
-## 10. Conclusion
-
-The Tree Plantation Drive was successfully conducted with active participation from volunteers and community members. The event encouraged environmental responsibility and community participation.
-
-## 11. Photos
-
-Photos from the event will be added to the Photo Gallery section.
+The Tree Plantation Drive was successfully conducted with the participation of volunteers and community members. The event helped promote environmental awareness and encouraged people to take responsibility for protecting nature.
