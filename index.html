@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HopeBridge Foundation</title>
+    <title>HopeBridge Foundation | Building a Better Future</title>
 
     <style>
 
@@ -13,28 +13,28 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
             color: #333;
+            line-height: 1.6;
             background: #ffffff;
         }
 
         /* ================= NAVIGATION ================= */
 
         nav {
-            background: #ffffff;
+            background: white;
             padding: 18px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.12);
         }
 
         .logo {
@@ -50,39 +50,35 @@
         nav ul {
             list-style: none;
             display: flex;
-            gap: 24px;
+            gap: 22px;
         }
 
-        nav ul li a {
+        nav a {
             text-decoration: none;
             color: #333;
             font-weight: bold;
         }
 
-        nav ul li a:hover {
+        nav a:hover {
             color: #176b4d;
         }
-
 
         /* ================= HERO ================= */
 
         .hero {
             min-height: 600px;
-
-            background:
-            linear-gradient(
-                rgba(10,70,50,0.78),
-                rgba(10,70,50,0.78)
-            ),
-            url("https://images.unsplash.com/photo-1542810634-71277d95dcbb")
-            center/cover;
-
             display: flex;
             align-items: center;
-
-            padding: 70px 7%;
-
+            padding: 80px 7%;
             color: white;
+
+            background:
+                linear-gradient(
+                    rgba(10, 70, 50, 0.78),
+                    rgba(10, 70, 50, 0.78)
+                ),
+                url("https://images.unsplash.com/photo-1542810634-71277d95dcbb")
+                center/cover;
         }
 
         .hero-content {
@@ -92,7 +88,7 @@
         .hero h1 {
             font-size: 55px;
             line-height: 1.2;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .hero p {
@@ -102,24 +98,18 @@
 
         .button {
             display: inline-block;
-
             background: #c89525;
             color: white;
-
-            padding: 13px 28px;
-
+            padding: 12px 25px;
             text-decoration: none;
             border-radius: 5px;
-
             font-weight: bold;
-
-            margin-right: 10px;
+            margin-top: 10px;
         }
 
         .button:hover {
             background: #a87918;
         }
-
 
         /* ================= GENERAL ================= */
 
@@ -139,866 +129,11 @@
 
         .section-title p {
             color: #666;
-            margin-top: 8px;
         }
-
 
         /* ================= ABOUT ================= */
 
         .about {
             display: flex;
-            gap: 50px;
-            align-items: center;
-        }
 
-        .about-text {
-            flex: 1;
-        }
-
-        .about-text h2 {
-            color: #176b4d;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        .about-text p {
-            margin-bottom: 15px;
-        }
-
-        .mission-box {
-            flex: 1;
-
-            background: #eef7f2;
-
-            padding: 40px;
-
-            border-left: 5px solid #176b4d;
-        }
-
-        .mission-box h3 {
-            color: #176b4d;
-            margin-bottom: 8px;
-        }
-
-
-        /* ================= DOCUMENTS ================= */
-
-        .documents {
-            background: #f5f8f6;
-        }
-
-        .document-grid {
-            display: grid;
-
-            grid-template-columns:
-            repeat(3, 1fr);
-
-            gap: 25px;
-        }
-
-        .document-card {
-            background: white;
-
-            padding: 30px;
-
-            border-radius: 8px;
-
-            box-shadow:
-            0 3px 12px rgba(0,0,0,0.10);
-
-            transition: 0.3s;
-        }
-
-        .document-card:hover {
-            transform: translateY(-6px);
-        }
-
-        .document-card h3 {
-            color: #176b4d;
-
-            margin-bottom: 12px;
-        }
-
-        .document-card p {
-            color: #666;
-
-            margin-bottom: 20px;
-        }
-
-
-        /* ================= IMPACT ================= */
-
-        .impact {
-            background: #176b4d;
-
-            color: white;
-
-            display: grid;
-
-            grid-template-columns:
-            repeat(3, 1fr);
-
-            text-align: center;
-
-            gap: 30px;
-        }
-
-        .impact h2 {
-            font-size: 42px;
-        }
-
-        .impact p {
-            font-size: 17px;
-        }
-
-
-        /* ================= EVENT ================= */
-
-        .event-box {
-            max-width: 900px;
-
-            margin: auto;
-
-            background: #f5f8f6;
-
-            padding: 35px;
-
-            border-radius: 8px;
-
-            border-left: 5px solid #176b4d;
-        }
-
-        .event-box h3 {
-            color: #176b4d;
-
-            font-size: 28px;
-
-            margin-bottom: 15px;
-        }
-
-        .event-box p {
-            margin-bottom: 10px;
-        }
-
-
-        /* ================= VOLUNTEER ================= */
-
-        .volunteer {
-            background: #c89525;
-
-            color: white;
-
-            text-align: center;
-        }
-
-        .volunteer h2 {
-            font-size: 36px;
-
-            margin-bottom: 15px;
-        }
-
-        .volunteer .button {
-            background: #176b4d;
-
-            margin-top: 20px;
-        }
-
-
-        /* ================= CONTACT ================= */
-
-        .contact-box {
-            max-width: 800px;
-
-            margin: auto;
-
-            background: #f5f8f6;
-
-            padding: 35px;
-
-            border-radius: 8px;
-        }
-
-        .contact-box p {
-            margin: 12px 0;
-        }
-
-
-        /* ================= FOOTER ================= */
-
-        footer {
-            background: #123f31;
-
-            color: white;
-
-            padding: 45px 7%;
-        }
-
-        .footer-content {
-            display: grid;
-
-            grid-template-columns:
-            2fr 1fr 1fr;
-
-            gap: 40px;
-        }
-
-        footer h3 {
-            margin-bottom: 15px;
-        }
-
-        footer p {
-            color: #dddddd;
-        }
-
-        .copyright {
-            text-align: center;
-
-            border-top:
-            1px solid rgba(255,255,255,0.25);
-
-            margin-top: 30px;
-
-            padding-top: 20px;
-        }
-
-
-        /* ================= MOBILE ================= */
-
-        @media (max-width: 768px) {
-
-            nav {
-                flex-direction: column;
-
-                gap: 15px;
-            }
-
-            nav ul {
-                flex-wrap: wrap;
-
-                justify-content: center;
-
-                gap: 12px;
-            }
-
-            .hero {
-                min-height: 500px;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-
-            .about {
-                flex-direction: column;
-            }
-
-            .document-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .impact {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-
-        }
-
-    </style>
-
-</head>
-
-
-<body>
-
-
-<!-- ================= NAVIGATION ================= -->
-
-<nav>
-
-    <div class="logo">
-        HopeBridge <span>Foundation</span>
-    </div>
-
-    <ul>
-
-        <li>
-            <a href="index.html">Home</a>
-        </li>
-
-        <li>
-            <a href="NGO-Profile/ngo-profil.md">
-                About Us
-            </a>
-        </li>
-
-        <li>
-            <a href="#documents">
-                Documents
-            </a>
-        </li>
-
-        <li>
-            <a href="#contact">
-                Contact
-            </a>
-        </li>
-
-    </ul>
-
-</nav>
-
-
-<!-- ================= HERO ================= -->
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>
-            Building a Better Future Together
-        </h1>
-
-        <p>
-            HopeBridge Foundation works with communities
-            and volunteers to create positive social and
-            environmental change.
-        </p>
-
-        <a
-            href="NGO-Profile/ngo-profil.md"
-            class="button">
-
-            Learn More
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section>
-
-    <div class="about">
-
-        <div class="about-text">
-
-            <h2>
-                Who We Are
-            </h2>
-
-            <p>
-                HopeBridge Foundation is a community-focused
-                NGO dedicated to creating meaningful and
-                sustainable change.
-            </p>
-
-            <p>
-                We conduct environmental activities,
-                awareness programs and volunteer initiatives
-                that encourage people to work together for
-                a better community.
-            </p>
-
-            <a
-                href="NGO-Profile/ngo-profil.md"
-                class="button">
-
-                Read Our Profile
-
-            </a>
-
-        </div>
-
-
-        <div class="mission-box">
-
-            <h3>
-                Our Mission
-            </h3>
-
-            <p>
-                To empower communities through awareness,
-                participation and meaningful volunteer action.
-            </p>
-
-            <br>
-
-            <h3>
-                Our Vision
-            </h3>
-
-            <p>
-                To build a responsible, inclusive and
-                environmentally conscious society.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= DOCUMENTS ================= -->
-
-<section
-    class="documents"
-    id="documents">
-
-    <div class="section-title">
-
-        <h2>
-            Our Documentation
-        </h2>
-
-        <p>
-            Explore the official documentation
-            of HopeBridge Foundation.
-        </p>
-
-    </div>
-
-
-    <div class="document-grid">
-
-
-        <!-- NGO PROFILE -->
-
-        <div class="document-card">
-
-            <h3>
-                NGO Profile
-            </h3>
-
-            <p>
-                Learn about our organization,
-                mission, vision and activities.
-            </p>
-
-            <a
-                href="NGO-Profile/ngo-profil.md"
-                class="button">
-
-                View Profile
-
-            </a>
-
-        </div>
-
-
-        <!-- EVENT REPORTS -->
-
-        <div class="document-card">
-
-            <h3>
-                Event Reports
-            </h3>
-
-            <p>
-                Read reports about events and
-                programs conducted by our NGO.
-            </p>
-
-            <a
-                href="Event-Reports/event%201.md"
-                class="button">
-
-                Event 1
-
-            </a>
-
-            <a
-                href="Event-Reports/event%202.md"
-                class="button">
-
-                Event 2
-
-            </a>
-
-        </div>
-
-
-        <!-- VOLUNTEER -->
-
-        <div class="document-card">
-
-            <h3>
-                Volunteer Handbook
-            </h3>
-
-            <p>
-                Guidelines and information
-                for our volunteers.
-            </p>
-
-            <a
-                href="Volunteer%20Handbook/Volunteer%20Handbook.md"
-                class="button">
-
-                View Handbook
-
-            </a>
-
-        </div>
-
-
-        <!-- AWARENESS -->
-
-        <div class="document-card">
-
-            <h3>
-                Awareness Materials
-            </h3>
-
-            <p>
-                Educational resources and
-                awareness materials.
-            </p>
-
-            <a
-                href="Awareness%20Materials/Education%20awareness.md"
-                class="button">
-
-                Education
-
-            </a>
-
-            <br><br>
-
-            <a
-                href="Awareness%20Materials/Environmental%20Awareness.md"
-                class="button">
-
-                Environment
-
-            </a>
-
-            <br><br>
-
-            <a
-                href="Awareness%20Materials/Health%20awareness.md"
-                class="button">
-
-                Health
-
-            </a>
-
-        </div>
-
-
-        <!-- GALLERY -->
-
-        <div class="document-card">
-
-            <h3>
-                Photo Gallery
-            </h3>
-
-            <p>
-                View photographs from our
-                events and activities.
-            </p>
-
-            <a
-                href="Photo%20Gallery/Gallery.md"
-                class="button">
-
-                View Gallery
-
-            </a>
-
-        </div>
-
-
-        <!-- MEETING MINUTES -->
-
-        <div class="document-card">
-
-            <h3>
-                Meeting Minutes
-            </h3>
-
-            <p>
-                Records of important meetings,
-                discussions and decisions.
-            </p>
-
-            <a
-                href="Meeting%20Minutes/Meeting%201.md"
-                class="button">
-
-                Meeting 1
-
-            </a>
-
-            <br><br>
-
-            <a
-                href="Meeting%20Minutes/Meeting%202.md"
-                class="button">
-
-                Meeting 2
-
-            </a>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<!-- ================= IMPACT ================= -->
-
-<section class="impact">
-
-    <div>
-
-        <h2>
-            10+
-        </h2>
-
-        <p>
-            Community Activities
-        </p>
-
-    </div>
-
-
-    <div>
-
-        <h2>
-            100+
-        </h2>
-
-        <p>
-            Volunteers
-        </p>
-
-    </div>
-
-
-    <div>
-
-        <h2>
-            500+
-        </h2>
-
-        <p>
-            People Reached
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FEATURED EVENT ================= -->
-
-<section>
-
-    <div class="section-title">
-
-        <h2>
-            Featured Event
-        </h2>
-
-        <p>
-            Our recent community initiative
-        </p>
-
-    </div>
-
-
-    <div class="event-box">
-
-        <h3>
-            Tree Plantation Drive
-        </h3>
-
-        <p>
-            <strong>Date:</strong>
-            15 August 2026
-        </p>
-
-        <p>
-            <strong>Location:</strong>
-            Community Park, Chennai
-        </p>
-
-        <p>
-            <strong>Organized By:</strong>
-            HopeBridge Foundation
-        </p>
-
-        <p>
-            Volunteers and community members
-            participated in a tree plantation drive
-            to promote environmental awareness and
-            encourage responsible environmental practices.
-        </p>
-
-        <br>
-
-        <a
-            href="Event-Reports/event%201.md"
-            class="button">
-
-            View Event Report
-
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- ================= VOLUNTEER ================= -->
-
-<section class="volunteer">
-
-    <h2>
-        Be Part of the Change
-    </h2>
-
-    <p>
-        Your time, ideas and participation
-        can make a difference.
-    </p>
-
-    <a
-        href="Volunteer%20Handbook/Volunteer%20Handbook.md"
-        class="button">
-
-        Become a Volunteer
-
-    </a>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact">
-
-    <div class="section-title">
-
-        <h2>
-            Contact Us
-        </h2>
-
-        <p>
-            We would be happy to hear from you.
-        </p>
-
-    </div>
-
-
-    <div class="contact-box">
-
-        <p>
-            <strong>Organization:</strong>
-            HopeBridge Foundation
-        </p>
-
-        <p>
-            <strong>Location:</strong>
-            Chennai, Tamil Nadu
-        </p>
-
-        <p>
-            <strong>Email:</strong>
-            hopebridge@example.com
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <div class="footer-content">
-
-        <div>
-
-            <h3>
-                HopeBridge Foundation
-            </h3>
-
-            <p>
-                Empowering communities and creating
-                a better future together.
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <h3>
-                Quick Links
-            </h3>
-
-            <p>
-                About Us
-            </p>
-
-            <p>
-                Event Reports
-            </p>
-
-            <p>
-                Volunteer Handbook
-            </p>
-
-        </div>
-
-
-        <div>
-
-            <h3>
-                Our Focus
-            </h3>
-
-            <p>
-                Environment
-            </p>
-
-            <p>
-                Awareness
-            </p>
-
-            <p>
-                Community
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="copyright">
-
-        <p>
-            © 2026 HopeBridge Foundation.
-            All Rights Reserved.
-        </p>
-
-    </div>
-
-</footer>
-
-
-</body>
-
-</html
+       
