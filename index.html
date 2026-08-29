@@ -7,195 +7,333 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>HopeBridge Foundation | NGO</title>
+    <title>HopeBridge Foundation | Building Hope, Creating Change</title>
 
     <style>
 
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
             scroll-behavior: smooth;
         }
 
         body {
-            font-family: Arial, sans-serif;
-            background: #f4fbf8;
-            color: #263238;
+            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.7;
+            background: #f5faf7;
+            color: #26332d;
         }
+
+        /* HEADER */
 
         header {
-            background: linear-gradient(135deg, #075e54, #00a896);
-            color: white;
-            padding: 25px 8%;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.2);
-        }
-
-        .header-content {
+            background: #ffffff;
+            padding: 18px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 20px;
-            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.08);
         }
 
         .logo {
-            font-size: 25px;
-            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            font-size: 35px;
+        }
+
+        .logo h1 {
+            color: #176b4d;
+            font-size: 23px;
+        }
+
+        .logo p {
+            font-size: 12px;
+            color: #777;
         }
 
         nav {
             display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
+            gap: 22px;
         }
 
         nav a {
-            color: white;
             text-decoration: none;
-            padding: 8px 12px;
-            border-radius: 20px;
+            color: #34443d;
             font-weight: bold;
+            font-size: 14px;
         }
 
         nav a:hover {
-            background: rgba(255,255,255,0.2);
+            color: #198754;
         }
 
+
+        /* HERO */
+
         .hero {
-            min-height: 500px;
+            min-height: 570px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
             padding: 70px 8%;
-            background: linear-gradient(135deg, #dff7ef, #fff4d6);
+            background: linear-gradient(
+                135deg,
+                #e5f7ed,
+                #ffffff,
+                #dff3e8
+            );
         }
 
         .hero-content {
-            max-width: 850px;
+            max-width: 700px;
         }
 
-        .hero h1 {
-            font-size: 52px;
-            color: #075e54;
-            margin-bottom: 15px;
+        .hero h2 {
+            font-size: 50px;
+            line-height: 1.2;
+            color: #145c42;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 span {
+            color: #e08b24;
         }
 
         .hero p {
-            font-size: 20px;
-            margin-bottom: 25px;
+            font-size: 18px;
+            color: #52635a;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         .btn {
             display: inline-block;
-            background: #f4a261;
-            color: white;
-            padding: 12px 22px;
-            border-radius: 25px;
+            padding: 13px 25px;
+            border-radius: 30px;
             text-decoration: none;
             font-weight: bold;
-            margin: 5px;
         }
 
-        .btn:hover {
-            background: #e76f51;
+        .btn-primary {
+            background: #198754;
+            color: white;
         }
+
+        .btn-primary:hover {
+            background: #126c43;
+        }
+
+        .btn-secondary {
+            border: 2px solid #198754;
+            color: #198754;
+            background: white;
+        }
+
+
+        /* INTRODUCTION */
+
+        .intro {
+            padding: 70px 8%;
+            text-align: center;
+            background: white;
+        }
+
+        .intro h2 {
+            color: #176b4d;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            max-width: 850px;
+            margin: auto;
+            color: #5c6962;
+        }
+
+
+        /* SECTION */
 
         section {
             padding: 70px 8%;
-            scroll-margin-top: 90px;
         }
 
         .section-title {
             text-align: center;
-            margin-bottom: 35px;
+            margin-bottom: 45px;
         }
 
         .section-title h2 {
-            font-size: 36px;
-            color: #075e54;
+            font-size: 34px;
+            color: #176b4d;
+            margin-bottom: 8px;
         }
 
         .section-title p {
-            color: #607d8b;
+            color: #6d7973;
         }
+
+
+        /* CARDS */
 
         .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
 
         .card {
             background: white;
-            padding: 28px;
-            border-radius: 18px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            border-top: 5px solid #00a896;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+            transition: 0.3s;
+            border-top: 4px solid #198754;
         }
 
         .card:hover {
             transform: translateY(-7px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
         }
 
-        .icon {
-            font-size: 40px;
-            margin-bottom: 10px;
+        .card .icon {
+            font-size: 42px;
+            margin-bottom: 15px;
         }
 
         .card h3 {
-            color: #075e54;
+            color: #176b4d;
             margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #65736c;
+            margin-bottom: 18px;
         }
 
         .card a {
             display: inline-block;
-            margin-top: 15px;
-            color: #075e54;
-            font-weight: bold;
             text-decoration: none;
+            color: #198754;
+            font-weight: bold;
         }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* ABOUT */
+
+        .about-box {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .about-box h3 {
+            color: #176b4d;
+            margin-top: 25px;
+            margin-bottom: 8px;
+        }
+
+        .about-box h3:first-child {
+            margin-top: 0;
+        }
+
+
+        /* IMPACT */
+
+        .impact {
+            background: #176b4d;
+            color: white;
+        }
+
+        .impact .section-title h2,
+        .impact .section-title p {
+            color: white;
+        }
+
+        .impact-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .impact-card {
+            text-align: center;
+            padding: 25px;
+            background: rgba(255,255,255,0.12);
+            border-radius: 15px;
+        }
+
+        .impact-card h3 {
+            font-size: 35px;
+        }
+
+        .impact-card p {
+            margin-top: 5px;
+        }
+
+
+        /* DOCUMENT SECTIONS */
 
         .content-section {
-            background: white;
-            margin: 35px 8%;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            border-left: 7px solid #00a896;
+            background: #f5faf7;
         }
 
-        .content-section h2 {
-            color: #075e54;
-            font-size: 32px;
+        .event {
+            max-width: 1000px;
+            margin: 0 auto 40px;
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .event h2 {
+            color: #176b4d;
             margin-bottom: 25px;
         }
 
-        .content-section h3 {
-            color: #00796b;
+        .event h3 {
+            color: #198754;
             margin-top: 25px;
             margin-bottom: 10px;
         }
 
-        .content-section h4 {
-            color: #e76f51;
-            margin-top: 20px;
+        .event h4 {
+            color: #176b4d;
+            margin-top: 25px;
         }
 
-        ul {
-            margin-left: 25px;
-            margin-top: 10px;
+        .event ul {
+            padding-left: 25px;
         }
 
-        li {
-            margin-bottom: 6px;
+        .event li {
+            margin-bottom: 7px;
         }
+
+        .event p {
+            color: #56645d;
+        }
+
+
+        /* TABLE */
 
         table {
             width: 100%;
@@ -206,63 +344,121 @@
 
         th,
         td {
-            border: 1px solid #b2dfdb;
-            padding: 12px;
+            border: 1px solid #cce5d8;
+            padding: 13px;
             text-align: left;
         }
 
         th {
-            background: #075e54;
+            background: #176b4d;
             color: white;
         }
 
-        tr:nth-child(even) {
-            background: #f0faf7;
+        td {
+            color: #45534c;
         }
 
-        .highlight {
-            background: #fff4d6;
-            padding: 20px;
-            border-radius: 12px;
-            margin: 20px 0;
+
+        /* CONTACT */
+
+        .contact {
+            background: white;
         }
 
-        .contact-box {
+        .contact-card {
             text-align: center;
-            background: linear-gradient(135deg, #dff7ef, #fff4d6);
-            padding: 40px;
-            border-radius: 20px;
+            background: #f0faf4;
+            padding: 30px;
+            border-radius: 15px;
         }
+
+        .contact-card .icon {
+            font-size: 35px;
+        }
+
+        .contact-card h3 {
+            color: #176b4d;
+            margin: 10px 0;
+        }
+
+
+        /* FOOTER */
 
         footer {
-            background: #263238;
+            background: #123d2e;
             color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 50px;
+            padding: 45px 8% 20px;
         }
 
-        @media (max-width: 700px) {
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
 
-            .hero h1 {
-                font-size: 36px;
+        footer h3 {
+            margin-bottom: 12px;
+        }
+
+        footer p {
+            color: #c7d8d0;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 7px;
+        }
+
+        footer a {
+            color: #c7d8d0;
+            text-decoration: none;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            margin-top: 35px;
+            padding-top: 20px;
+            color: #b8ccc3;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
             }
 
             nav {
+                flex-wrap: wrap;
                 justify-content: center;
+                gap: 12px;
             }
 
-            .content-section {
-                margin: 20px 4%;
+            .hero h2 {
+                font-size: 38px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .impact-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .event {
                 padding: 25px;
-            }
-
-            section {
-                padding: 50px 5%;
-            }
-
-            table {
-                font-size: 14px;
             }
 
         }
@@ -275,79 +471,298 @@
 <body>
 
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 
 <header>
 
-    <div class="header-content">
+    <div class="logo">
 
-        <div class="logo">
-            🌉 HopeBridge Foundation
+        <div class="logo-icon">🌉</div>
+
+        <div>
+            <h1>HopeBridge Foundation</h1>
+            <p>Building Hope • Creating Change</p>
         </div>
 
-        <nav>
-
-            <a href="#home">🏠 Home</a>
-
-            <a href="#events">📅 Events</a>
-
-            <a href="#awareness">📚 Awareness</a>
-
-            <a href="#volunteer">🤝 Volunteer</a>
-         
-            <a href="#contact">📞 Contact</a>
-
-        </nav>
-
     </div>
+
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#programs">Programs</a>
+
+        <a href="#documents">Documents</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
 
 </header>
 
 
-<!-- ================= HOME ================= -->
+<!-- HERO -->
 
-<section id="home" class="hero">
+<section class="hero" id="home">
 
     <div class="hero-content">
 
-        <h1>🌉 HopeBridge Foundation</h1>
+        <h2>
+            Building <span>Hope</span>,<br>
+            Creating Change 🌱
+        </h2>
 
         <p>
-            Building a stronger and more caring community through
-            education, environmental awareness, health awareness
-            and volunteering.
+            HopeBridge Foundation is dedicated to supporting communities
+            through education, environmental activities, health awareness
+            and volunteer-based social initiatives.
         </p>
 
-        <a href="#events" class="btn">
-            📅 View Our Events
-        </a>
+        <div class="hero-buttons">
 
-        <a href="#contact" class="btn">
-            📞 Contact Us
-        </a>
+            <a href="#about" class="btn btn-primary">
+                Learn About Us
+            </a>
+
+            <a href="#programs" class="btn btn-secondary">
+                Our Programs
+            </a>
+
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- ================= DOCUMENTATION CARDS ================= -->
+<!-- INTRODUCTION -->
 
-<section>
+<section class="intro">
+
+    <h2>🤝 Making a Difference Together</h2>
+
+    <p>
+        We believe that meaningful change begins with people working
+        together. Through community programs, awareness activities and
+        volunteering, HopeBridge Foundation works towards building a
+        stronger and more caring community.
+    </p>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
 
     <div class="section-title">
 
-        <h2>🌟 Our Documentation</h2>
+        <h2>🏢 About HopeBridge Foundation</h2>
 
-        <p>Explore our NGO activities and resources</p>
+        <p>Who we are and what we believe</p>
+
+    </div>
+
+
+    <div class="about-box">
+
+        <h3>🌉 About Us</h3>
+
+        <p>
+            HopeBridge Foundation is a non-profit organization dedicated
+            to supporting communities through education, environmental
+            activities, health awareness and volunteer-based social
+            initiatives.
+        </p>
+
+
+        <h3>🌟 Vision</h3>
+
+        <p>
+            To build a stronger and more caring community where everyone
+            has access to opportunities, knowledge and support.
+        </p>
+
+
+        <h3>🎯 Mission</h3>
+
+        <p>
+            Our mission is to organize community programs, encourage
+            volunteering, spread awareness and support people through
+            meaningful social initiatives.
+        </p>
+
+
+        <h3>✨ Objectives</h3>
+
+        <ul>
+
+            <li>📚 Promote education and learning opportunities.</li>
+
+            <li>🌱 Conduct environmental awareness activities.</li>
+
+            <li>🩺 Promote health awareness.</li>
+
+            <li>🤝 Encourage volunteering and community participation.</li>
+
+            <li>📢 Spread awareness through educational programs.</li>
+
+            <li>❤️ Support communities through meaningful social initiatives.</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- IMPACT -->
+
+<section class="impact">
+
+    <div class="section-title">
+
+        <h2>🌍 Our Areas of Impact</h2>
+
+        <p>Working together for a better community</p>
+
+    </div>
+
+
+    <div class="impact-cards">
+
+        <div class="impact-card">
+            <h3>📚</h3>
+            <p>Education</p>
+        </div>
+
+        <div class="impact-card">
+            <h3>🌱</h3>
+            <p>Environment</p>
+        </div>
+
+        <div class="impact-card">
+            <h3>🩺</h3>
+            <p>Health</p>
+        </div>
+
+        <div class="impact-card">
+            <h3>🤝</h3>
+            <p>Community</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROGRAMS -->
+
+<section id="programs">
+
+    <div class="section-title">
+
+        <h2>💚 Our Programs</h2>
+
+        <p>Creating opportunities and spreading awareness</p>
 
     </div>
 
 
     <div class="cards">
 
+        <div class="card">
 
-        <!-- EVENT REPORTS -->
+            <div class="icon">🎓</div>
+
+            <h3>Education</h3>
+
+            <p>
+                Promoting education, learning opportunities and
+                educational awareness in communities.
+            </p>
+
+            <a href="#education-awareness">
+                Explore Education →
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🌱</div>
+
+            <h3>Environment</h3>
+
+            <p>
+                Encouraging environmental protection and responsible
+                use of natural resources.
+            </p>
+
+            <a href="#environmental-awareness">
+                Explore Environment →
+            </a>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">🩺</div>
+
+            <h3>Health</h3>
+
+            <p>
+                Spreading awareness about healthy habits, hygiene
+                and community well-being.
+            </p>
+
+            <a href="#health-awareness">
+                Explore Health →
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DOCUMENTS -->
+
+<section id="documents" class="content-section">
+
+    <div class="section-title">
+
+        <h2>📂 Our Documents</h2>
+
+        <p>Explore our activities, resources and documentation</p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">🏢</div>
+
+            <h3>NGO Profile</h3>
+
+            <p>
+                Learn about our vision, mission and objectives.
+            </p>
+
+            <a href="#about">
+                View NGO Profile →
+            </a>
+
+        </div>
+
 
         <div class="card">
 
@@ -356,21 +771,19 @@
             <h3>Event Reports</h3>
 
             <p>
-                Read reports about our community events and activities.
+                Read about our community events and activities.
             </p>
 
-            <a href="#events">
-                View Reports →
+            <a href="#event-reports">
+                View Event Reports →
             </a>
 
         </div>
 
 
-        <!-- AWARENESS -->
-
         <div class="card">
 
-            <div class="icon">📚</div>
+            <div class="icon">📢</div>
 
             <h3>Awareness Materials</h3>
 
@@ -378,14 +791,12 @@
                 Education, environmental and health awareness resources.
             </p>
 
-            <a href="#awareness">
-                Explore Materials →
+            <a href="#awareness-materials">
+                View Awareness Materials →
             </a>
 
         </div>
 
-
-        <!-- VOLUNTEER -->
 
         <div class="card">
 
@@ -394,17 +805,32 @@
             <h3>Volunteer Handbook</h3>
 
             <p>
-                Guidelines and responsibilities for volunteers.
+                Guidelines and useful information for volunteers.
             </p>
 
-            <a href="#volunteer">
-                View Handbook →
+            <a href="Volunteer-Handbook/volunteer-handbook.md">
+                Open Volunteer Handbook →
             </a>
 
         </div>
 
 
-        <!-- MEETINGS -->
+        <div class="card">
+
+            <div class="icon">📸</div>
+
+            <h3>Photo Gallery</h3>
+
+            <p>
+                Photos and memories from our activities.
+            </p>
+
+            <a href="Photo-Gallery/photo-gallery.md">
+                Open Photo Gallery →
+            </a>
+
+        </div>
+
 
         <div class="card">
 
@@ -413,38 +839,37 @@
             <h3>Meeting Minutes</h3>
 
             <p>
-                Documentation of planning and review meetings.
+                Documentation of meetings and discussions.
             </p>
 
-            <a href="#meetings">
-                View Meetings →
+            <a href="Meeting-Minutes/meeting-minutes.md">
+                Open Meeting Minutes →
             </a>
 
         </div>
 
-
     </div>
 
 </section>
+<!-- EVENT REPORTS -->
 
+<section id="event-reports" class="content-section">
 
-<!-- ================= EVENT REPORTS ================= -->
-
-<section id="events" class="content-section">
-
-    <h2>📅 Event Reports</h2>
+    <div class="section-title">
+        <h2>📅 Event Reports</h2>
+        <p>Our community activities and events</p>
+    </div>
 
 
     <!-- EVENT REPORT 1 -->
 
-    <div class="highlight">
+    <div class="event">
 
-        <h3>🌲 Event Report 1: Tree Plantation Drive</h3>
+        <h2>🌲 Event Report 1: Tree Plantation Drive</h2>
 
-        <h4>📋 Event Details</h4>
+        <h3>📋 Event Details</h3>
 
         <table>
-
             <tr>
                 <th>Item</th>
                 <th>Details</th>
@@ -474,11 +899,10 @@
                 <td>Participants</td>
                 <td>Volunteers and community members</td>
             </tr>
-
         </table>
 
 
-        <h4>🎯 Objective</h4>
+        <h3>🎯 Objective</h3>
 
         <p>
             The main objective of the event was to encourage environmental
@@ -486,60 +910,42 @@
         </p>
 
 
-        <h4>🌱 Activities Conducted</h4>
+        <h3>🌳 Activities Conducted</h3>
 
         <ul>
-
             <li>Volunteers planted trees in the community park.</li>
-
             <li>Participants were educated about the importance of trees.</li>
-
             <li>The team discussed environmental protection.</li>
-
             <li>Volunteers cleaned the surrounding area.</li>
-
         </ul>
 
 
-        <h4>📈 Outcomes</h4>
+        <h3>🌟 Outcomes</h3>
 
         <ul>
-
             <li>Increased awareness about environmental protection.</li>
-
             <li>Trees were planted in the community park.</li>
-
             <li>Community members participated in the activity.</li>
-
-            <li>
-                Volunteers gained experience in organizing social activities.
-            </li>
-
+            <li>Volunteers gained experience in organizing social activities.</li>
         </ul>
 
 
-        <h4>⚠️ Challenges</h4>
+        <h3>⚠️ Challenges</h3>
 
         <ul>
-
             <li>Limited number of planting materials.</li>
-
             <li>Hot weather affected the duration of the activity.</li>
-
-            <li>
-                More volunteers were needed for the cleanup activity.
-            </li>
-
+            <li>More volunteers were needed for the cleanup activity.</li>
         </ul>
 
 
-        <h4>🌳 Conclusion</h4>
+        <h3>🌈 Conclusion</h3>
 
         <p>
             The Tree Plantation Drive was successfully conducted with the
-            participation of volunteers and community members. The event helped
-            promote environmental awareness and encouraged people to take
-            responsibility for protecting nature.
+            participation of volunteers and community members. The event
+            helped promote environmental awareness and encouraged people
+            to take responsibility for protecting nature.
         </p>
 
     </div>
@@ -547,11 +953,11 @@
 
     <!-- EVENT REPORT 2 -->
 
-    <div class="highlight">
+    <div class="event">
 
-        <h3>🎓 Event Report 2 – Education Awareness Camp</h3>
+        <h2>🎓 Event Report 2 – Education Awareness Camp</h2>
 
-        <h4>📋 Event Details</h4>
+        <h3>📋 Event Details</h3>
 
         <table>
 
@@ -578,58 +984,37 @@
         </table>
 
 
-        <h4>🎯 Objective</h4>
+        <h3>🎯 Objective</h3>
 
         <p>
-            The main objective of the event was to create awareness about the
-            importance of education and encourage students to continue their
-            learning.
+            The main objective of the event was to create awareness about
+            the importance of education and encourage students to continue
+            their learning.
         </p>
 
 
-        <h4>👥 Participants</h4>
+        <h3>👥 Participants</h3>
 
         <ul>
-
             <li>NGO volunteers</li>
-
             <li>Students</li>
-
             <li>Parents</li>
-
             <li>Community members</li>
-
         </ul>
 
 
-        <h4>📚 Activities Conducted</h4>
+        <h3>📚 Activities Conducted</h3>
 
         <ul>
-
-            <li>
-                Volunteers introduced the purpose of the awareness camp.
-            </li>
-
-            <li>
-                The importance of education was discussed.
-            </li>
-
-            <li>
-                Students were given guidance about learning resources.
-            </li>
-
-            <li>
-                Volunteers discussed good study habits.
-            </li>
-
-            <li>
-                Questions from students and parents were answered.
-            </li>
-
+            <li>Volunteers introduced the purpose of the awareness camp.</li>
+            <li>The importance of education was discussed.</li>
+            <li>Students were given guidance about learning resources.</li>
+            <li>Volunteers discussed good study habits.</li>
+            <li>Questions from students and parents were answered.</li>
         </ul>
 
 
-        <h4>📈 Outcome</h4>
+        <h3>🌟 Outcome</h3>
 
         <p>
             The event helped students and parents understand the importance
@@ -637,20 +1022,16 @@
         </p>
 
 
-        <h4>⚠️ Challenges</h4>
+        <h3>⚠️ Challenges</h3>
 
         <ul>
-
             <li>Limited time for interaction</li>
-
             <li>Different learning needs among participants</li>
-
             <li>Limited learning resources</li>
-
         </ul>
 
 
-        <h4>🌈 Conclusion</h4>
+        <h3>🌈 Conclusion</h3>
 
         <p>
             The Education Awareness Camp provided useful information to
@@ -658,25 +1039,38 @@
             educational awareness activities.
         </p>
 
+
+        <h3>📸 Photos</h3>
+
+        <p>
+            Photos from the event can be added to the Photo Gallery section.
+        </p>
+
     </div>
 
 </section>
 
 
-<!-- ================= AWARENESS MATERIALS ================= -->
+<!-- AWARENESS MATERIALS -->
 
-<section id="awareness" class="content-section">
+<section id="awareness-materials" class="content-section">
 
-    <h2>📢 Awareness Materials</h2>
+    <div class="section-title">
+
+        <h2>📢 Awareness Materials</h2>
+
+        <p>Education, environment and health awareness</p>
+
+    </div>
 
 
     <!-- EDUCATION AWARENESS -->
 
-    <div class="highlight">
+    <div class="event">
 
-        <h3>🎓 Education Awareness</h3>
+        <h2>🎓 Education Awareness</h2>
 
-        <h4>📚 Introduction</h4>
+        <h3>📚 Introduction</h3>
 
         <p>
             Education provides people with knowledge and skills that can help
@@ -684,83 +1078,62 @@
             🌍✨
         </p>
 
-        <h4>🌟 Importance of Education</h4>
+
+        <h3>🌟 Importance of Education</h3>
 
         <p>Education helps individuals:</p>
 
         <ul>
-
             <li>🧠 Develop knowledge and skills.</li>
-
             <li>🗣️ Improve communication.</li>
-
             <li>💡 Make informed decisions.</li>
-
             <li>💪 Develop confidence.</li>
-
             <li>🎯 Discover career opportunities.</li>
-
         </ul>
 
-        <h4>📖 Good Study Habits</h4>
+
+        <h3>📖 Good Study Habits</h3>
 
         <p>Students can improve their learning by:</p>
 
         <ul>
-
             <li>📅 Creating a study schedule.</li>
-
             <li>🎯 Setting realistic goals.</li>
-
             <li>☕ Taking regular breaks.</li>
-
             <li>🔄 Reviewing lessons regularly.</li>
-
             <li>🙋 Asking questions when they need help.</li>
-
             <li>📚 Using reliable learning resources.</li>
-
         </ul>
 
-        <h4>💻 Digital Learning</h4>
 
-        <p>
-            Digital tools can provide students with access to:
-        </p>
+        <h3>💻 Digital Learning</h3>
+
+        <p>Digital tools can provide students with access to:</p>
 
         <ul>
-
             <li>🎓 Online courses</li>
-
             <li>🎥 Educational videos</li>
-
             <li>📚 Digital libraries</li>
-
             <li>📱 Learning applications</li>
-
             <li>📝 Online study materials</li>
-
         </ul>
 
-        <h4>🤝 NGO Activities</h4>
+
+        <h3>🤝 NGO Activities</h3>
 
         <p>
             HopeBridge Foundation can support education through:
         </p>
 
         <ul>
-
             <li>🏫 Educational awareness camps</li>
-
             <li>👩‍🏫 Study guidance sessions</li>
-
             <li>💻 Digital literacy programs</li>
-
             <li>📦 Distribution of learning materials</li>
-
         </ul>
 
-        <h4>🌈 Conclusion</h4>
+
+        <h3>🌈 Conclusion</h3>
 
         <p>
             Education awareness can encourage students and communities to
@@ -773,56 +1146,47 @@
 
     <!-- ENVIRONMENTAL AWARENESS -->
 
-    <div class="highlight">
+    <div class="event">
 
-        <h3>🌱 Environmental Awareness</h3>
+        <h2>🌱 Environmental Awareness</h2>
 
-        <h4>🌍 Introduction</h4>
+        <h3>🌍 Introduction</h3>
 
         <p>
-            Environmental awareness helps people understand the importance of
-            protecting nature 🌳 and using natural resources responsibly. 💚
+            Environmental awareness helps people understand the importance
+            of protecting nature 🌳 and using natural resources responsibly.
+            💚
         </p>
 
-        <h4>🌿 Importance of the Environment</h4>
+
+        <h3>🌿 Importance of the Environment</h3>
 
         <p>
             A clean and healthy environment 🌎 is important for:
         </p>
 
         <ul>
-
             <li>👨‍👩‍👧‍👦 People</li>
-
             <li>🐾 Animals</li>
-
             <li>🌱 Plants</li>
-
             <li>👶 Future generations</li>
-
         </ul>
 
-        <h4>♻️ Ways to Protect the Environment</h4>
+
+        <h3>♻️ Ways to Protect the Environment</h3>
 
         <ul>
-
             <li>🌳 Plant and protect trees.</li>
-
             <li>🗑️ Reduce unnecessary waste.</li>
-
             <li>🔄 Reuse materials whenever possible.</li>
-
             <li>♻️ Recycle suitable materials.</li>
-
             <li>💧 Save water.</li>
-
             <li>💡 Save electricity.</li>
-
             <li>🧹 Keep public spaces clean.</li>
-
         </ul>
 
-        <h4>🗑️ Waste Management</h4>
+
+        <h3>🗑️ Waste Management</h3>
 
         <p>
             The three important principles are:
@@ -847,34 +1211,28 @@
 
             <tr>
                 <td>♻️ Recycle</td>
-                <td>
-                    Process suitable waste into reusable materials
-                </td>
+                <td>Process suitable waste into reusable materials</td>
             </tr>
 
         </table>
 
-        <h4>🤝 NGO Activities</h4>
+
+        <h3>🤝 NGO Activities</h3>
 
         <p>
             HopeBridge Foundation can organize:
         </p>
 
         <ul>
-
             <li>🌳 Tree plantation drives</li>
-
             <li>🧹 Cleanliness campaigns</li>
-
             <li>🗑️ Waste management awareness</li>
-
             <li>💧 Water conservation programs</li>
-
             <li>📚 Environmental education sessions</li>
-
         </ul>
 
-        <h4>🌈 Conclusion</h4>
+
+        <h3>🌈 Conclusion</h3>
 
         <p>
             Small actions by individuals and communities 🌍🤝 can contribute
@@ -886,11 +1244,11 @@
 
     <!-- HEALTH AWARENESS -->
 
-    <div class="highlight">
+    <div class="event">
 
-        <h3>🩺 Health Awareness</h3>
+        <h2>🩺 Health Awareness</h2>
 
-        <h4>🌿 Introduction</h4>
+        <h3>🌿 Introduction</h3>
 
         <p>
             Health awareness helps people understand healthy habits and the
@@ -898,7 +1256,8 @@
             ❤️🧠
         </p>
 
-        <h4>💪 Importance of Health</h4>
+
+        <h3>💪 Importance of Health</h3>
 
         <p>
             Good health helps people lead active and productive lives.
@@ -906,67 +1265,48 @@
             common health problems. 🏃‍♀️🌍
         </p>
 
-        <h4>🥗 Healthy Habits</h4>
+
+        <h3>🥗 Healthy Habits</h3>
 
         <ul>
-
             <li>🥦 Eat a balanced diet.</li>
-
             <li>💧 Drink enough clean water.</li>
-
             <li>🏃‍♂️ Exercise regularly.</li>
-
             <li>🧼 Maintain personal hygiene.</li>
-
             <li>😴 Get enough sleep.</li>
-
             <li>🧹 Keep the surroundings clean.</li>
-
-            <li>
-                👩‍⚕️ Visit healthcare professionals when necessary.
-            </li>
-
+            <li>👩‍⚕️ Visit healthcare professionals when necessary.</li>
         </ul>
 
-        <h4>🧼 Personal Hygiene</h4>
 
-        <p>
-            Good personal hygiene includes:
-        </p>
+        <h3>🧼 Personal Hygiene</h3>
+
+        <p>Good personal hygiene includes:</p>
 
         <ul>
-
             <li>👐 Washing hands regularly.</li>
-
             <li>🚿 Keeping the body clean.</li>
-
             <li>🦷 Maintaining oral hygiene.</li>
-
             <li>👕 Wearing clean clothes.</li>
-
             <li>🍎 Keeping food and drinking water clean.</li>
-
         </ul>
 
-        <h4>🏥 NGO Activities</h4>
+
+        <h3>🏥 NGO Activities</h3>
 
         <p>
             HopeBridge Foundation can conduct:
         </p>
 
         <ul>
-
             <li>🏥 Health awareness camps</li>
-
             <li>🧼 Hygiene awareness sessions</li>
-
             <li>🧹 Community cleanliness programs</li>
-
             <li>📢 Educational campaigns</li>
-
         </ul>
 
-        <h4>🌟 Conclusion</h4>
+
+        <h3>🌟 Conclusion</h3>
 
         <p>
             Health awareness encourages individuals and communities to make
@@ -977,193 +1317,127 @@
     </div>
 
 </section>
-<!-- ================= VOLUNTEER HANDBOOK ================= -->
-
-<section id="volunteer" class="content-section">
-
-    <h2>🤝 Volunteer Handbook</h2>
-
-    <h3>👋 Welcome</h3>
-
-    <p>
-        Welcome to HopeBridge Foundation. Volunteers play an important role
-        in supporting our community activities and social initiatives.
-    </p>
-
-    <h3>🙋 Who is a Volunteer?</h3>
-
-    <p>
-        A volunteer is a person who willingly contributes their time, skills,
-        and effort to support the activities of the NGO without expecting
-        financial compensation.
-    </p>
-
-    <h3>📌 Volunteer Responsibilities</h3>
-
-    <p>Volunteers are expected to:</p>
-
-    <ul>
-        <li>Participate actively in NGO activities.</li>
-        <li>Complete assigned tasks responsibly.</li>
-        <li>Follow the instructions of the organizing team.</li>
-        <li>Treat all participants with respect.</li>
-        <li>Maintain proper communication with team members.</li>
-        <li>Help maintain accurate project records.</li>
-        <li>Report problems or concerns to the team leader.</li>
-    </ul>
-
-    <h3>📜 Code of Conduct</h3>
-
-    <p>All volunteers should:</p>
-
-    <ul>
-        <li>Be respectful and responsible.</li>
-        <li>Communicate politely with others.</li>
-        <li>Work cooperatively with team members.</li>
-        <li>Follow NGO rules and guidelines.</li>
-        <li>Respect the privacy of participants.</li>
-        <li>Avoid discrimination or inappropriate behavior.</li>
-    </ul>
-
-    <h3>💬 Communication Guidelines</h3>
-
-    <ul>
-        <li>Use clear and respectful language.</li>
-        <li>Respond to important team messages on time.</li>
-        <li>Inform the team leader if you cannot attend an activity.</li>
-        <li>Share important updates with the appropriate team members.</li>
-    </ul>
-
-    <h3>📅 Event Participation</h3>
-
-    <h4>Before an event:</h4>
-
-    <ul>
-        <li>Read the event instructions.</li>
-        <li>Understand your assigned responsibility.</li>
-        <li>Arrive at the required time.</li>
-        <li>Carry any required materials.</li>
-    </ul>
-
-    <h4>During an event:</h4>
-
-    <ul>
-        <li>Follow the instructions of the organizing team.</li>
-        <li>Help participants when required.</li>
-        <li>Maintain a positive and respectful attitude.</li>
-    </ul>
-
-    <h4>After an event:</h4>
-
-    <ul>
-        <li>Help clean and organize the event area.</li>
-        <li>Submit required information or reports.</li>
-        <li>Share feedback with the organizing team.</li>
-    </ul>
-
-    <h3>🛡️ Safety Guidelines</h3>
-
-    <ul>
-        <li>Follow safety instructions at all times.</li>
-        <li>Avoid unsafe activities.</li>
-        <li>Report accidents or hazards immediately.</li>
-        <li>Stay with the assigned team during outdoor activities.</li>
-        <li>Follow the instructions of event coordinators.</li>
-    </ul>
-
-    <h3>✅ Do's and Don'ts</h3>
-
-    <table>
-
-        <tr>
-            <th>Do's</th>
-            <th>Don'ts</th>
-        </tr>
-
-        <tr>
-            <td>Be punctual</td>
-            <td>Do not arrive late without informing the team</td>
-        </tr>
-
-        <tr>
-            <td>Respect everyone</td>
-            <td>Do not use offensive language</td>
-        </tr>
-
-        <tr>
-            <td>Follow instructions</td>
-            <td>Do not ignore safety guidelines</td>
-        </tr>
-
-        <tr>
-            <td>Work as a team</td>
-            <td>Do not create unnecessary conflicts</td>
-        </tr>
-
-        <tr>
-            <td>Communicate clearly</td>
-            <td>Do not share private information</td>
-        </tr>
-
-    </table>
-
-    <h3>📢 Reporting Procedures</h3>
-
-    <p>
-        Volunteers should report any problems, incidents, or concerns to the
-        team leader or event coordinator as soon as possible.
-    </p>
-
-    <h3>🌈 Conclusion</h3>
-
-    <p>
-        Volunteers are an important part of HopeBridge Foundation. Responsible
-        participation, teamwork, and respectful communication help the NGO
-        conduct successful community activities.
-    </p>
-
-</section>
 
 
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 
-<section id="contact" class="content-section">
+<section id="contact" class="contact">
 
-    <h2>📞 Contact Us</h2>
+    <div class="section-title">
 
-    <div class="contact-box">
+        <h2>📞 Contact HopeBridge Foundation</h2>
 
-        <h3>🌉 HopeBridge Foundation</h3>
+        <p>We believe everyone can contribute to positive change.</p>
 
-        <p>📧 hopebridgefoundation@gmail.com</p>
+    </div>
 
-        <p>📱 +91 98765 43210</p>
 
-        <p>📍 Chennai, Tamil Nadu, India</p>
+    <div class="cards">
 
-        <p>
-            🤝 We welcome volunteers and community members
-            who want to support meaningful social initiatives.
-        </p>
+        <div class="contact-card">
+
+            <div class="icon">📧</div>
+
+            <h3>Email</h3>
+
+            <p>hopebridgefoundation@example.com</p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="icon">📍</div>
+
+            <h3>Location</h3>
+
+            <p>Chennai, Tamil Nadu</p>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="icon">🤝</div>
+
+            <h3>Volunteer</h3>
+
+            <p>Join us and help create positive change.</p>
+
+        </div>
 
     </div>
 
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 
 <footer>
 
-    <h3>🌉 HopeBridge Foundation</h3>
+    <div class="footer-content">
 
-    <p>
-        Education • Environment • Health • Volunteering
-    </p>
+        <div>
 
-    <p>
-        © 2026 HopeBridge Foundation. All Rights Reserved.
-    </p>
+            <h3>🌉 HopeBridge Foundation</h3>
+
+            <p>
+                Building hope, creating change and supporting communities
+                through meaningful social initiatives.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>🔗 Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#programs">Programs</a></li>
+
+                <li><a href="#documents">Documents</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>💚 Our Focus</h3>
+
+            <ul>
+
+                <li>📚 Education</li>
+
+                <li>🌱 Environment</li>
+
+                <li>🩺 Health</li>
+
+                <li>🤝 Community</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>
+            © 2026 HopeBridge Foundation. All Rights Reserved.
+        </p>
+
+    </div>
 
 </footer>
 
