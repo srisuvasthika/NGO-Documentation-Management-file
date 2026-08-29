@@ -1,10 +1,689 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HopeBridge Foundation | Building a Better Future</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: #f5f8fb;
+    color: #263238;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #075e54;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd54f;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #00695c, #26a69a, #80cbc4);
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: #ffd54f;
+    color: #263238;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.button:hover {
+    background: white;
+}
+
+/* GENERAL */
+
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    color: #075e54;
+    font-size: 35px;
+}
+
+.section-title p {
+    color: #607d8b;
+}
+
+/* ABOUT */
+
+.about {
+    background: white;
+}
+
+.about-box {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #075e54;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #607d8b;
+    margin-bottom: 18px;
+}
+
+.card a {
+    display: inline-block;
+    background: #075e54;
+    color: white;
+    padding: 9px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.card a:hover {
+    background: #26a69a;
+}
+
+/* DOCUMENTATION */
+
+.documents {
+    background: #eef6f5;
+}
+
+/* VISION MISSION */
+
+.vm {
+    background: white;
+}
+
+.vm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.vm-box {
+    padding: 30px;
+    border-radius: 15px;
+    background: #f5f8fb;
+    border-left: 6px solid #26a69a;
+}
+
+.vm-box h3 {
+    color: #075e54;
+    margin-bottom: 10px;
+}
+
+/* VOLUNTEER */
+
+.volunteer {
+    background: linear-gradient(135deg, #004d40, #00796b);
+    color: white;
+    text-align: center;
+}
+
+.volunteer h2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.volunteer p {
+    max-width: 700px;
+    margin: auto auto 25px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #263238;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+}
+
+</style>
 </head>
+
 <body>
-    <h1>HELLO HOPEBRIDGE</h1>
-    <p>My GitHub Pages website is working!</p>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="logo">
+🌉 HopeBridge Foundation
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#programs">Programs</a></li>
+<li><a href="#documents">Documents</a></li>
+<li><a href="#volunteer">Volunteer</a></li>
+</ul>
+
+</nav>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>HopeBridge Foundation</h1>
+
+<p>
+Building a Better Future Through Education,
+Awareness, Environment and Community Service.
+</p>
+
+<a href="#about" class="button">Learn More</a>
+
+<a href="#documents" class="button">Explore Documents</a>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="section-title">
+
+<h2>🌍 About Our NGO</h2>
+
+<p>Working together for a stronger and caring community</p>
+
+</div>
+
+<div class="about-box">
+
+<p>
+<strong>HopeBridge Foundation</strong> is a non-profit organization
+dedicated to supporting communities through education,
+environmental activities, health awareness and volunteer-based
+social initiatives.
+</p>
+
+<br>
+
+<p>
+Our goal is to create meaningful opportunities, spread awareness
+and encourage people to participate in activities that improve
+the lives of individuals and communities.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- VISION MISSION -->
+
+<section class="vm">
+
+<div class="section-title">
+
+<h2>🎯 Our Vision & Mission</h2>
+
+</div>
+
+<div class="vm-grid">
+
+<div class="vm-box">
+
+<h3>🌟 Vision</h3>
+
+<p>
+To build a stronger and more caring community where everyone
+has access to opportunities, knowledge and support.
+</p>
+
+</div>
+
+<div class="vm-box">
+
+<h3>🤝 Mission</h3>
+
+<p>
+To organize community programs, encourage volunteering,
+spread awareness and support people through meaningful
+social initiatives.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROGRAMS -->
+
+<section id="programs">
+
+<div class="section-title">
+
+<h2>💚 Our Programs</h2>
+
+<p>Creating positive change through community action</p>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">📚</div>
+
+<h3>Education</h3>
+
+<p>
+Promoting learning opportunities and educational awareness
+for the community.
+</p>
+
+<a href="Awareness%20Materials/Education%20awareness.md">
+View Program
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🌱</div>
+
+<h3>Environment</h3>
+
+<p>
+Encouraging environmental responsibility and clean
+surroundings.
+</p>
+
+<a href="Awareness%20Materials/Environmental%20Awareness.md">
+View Program
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">❤️</div>
+
+<h3>Health Awareness</h3>
+
+<p>
+Promoting healthy habits, hygiene and community health
+awareness.
+</p>
+
+<a href="Awareness%20Materials/Health%20awareness.md">
+View Program
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🙋</div>
+
+<h3>Volunteering</h3>
+
+<p>
+Encouraging people to contribute their time and skills
+to community activities.
+</p>
+
+<a href="Volunteer%20Handbook/Volunteer%20Handbook.md">
+Volunteer Guide
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DOCUMENTS -->
+
+<section class="documents" id="documents">
+
+<div class="section-title">
+
+<h2>📂 NGO Documentation</h2>
+
+<p>Explore our official project documentation</p>
+
+</div>
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="icon">🏢</div>
+
+<h3>NGO Profile</h3>
+
+<p>
+Learn about HopeBridge Foundation, its vision,
+mission and objectives.
+</p>
+
+<a href="NGO-Profile/ngo-profil.md">
+View NGO Profile
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📅</div>
+
+<h3>Event Reports</h3>
+
+<p>
+Read reports and documentation of our community events.
+</p>
+
+<a href="Event-Reports/event%201.md">
+Event 1
+</a>
+
+<a href="Event-Reports/event%202.md">
+Event 2
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📝</div>
+
+<h3>Meeting Minutes</h3>
+
+<p>
+View records and important decisions from NGO meetings.
+</p>
+
+<a href="Meeting%20Minutes/Meeting%201.md">
+Meeting 1
+</a>
+
+<a href="Meeting%20Minutes/Meeting%202.md">
+Meeting 2
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📸</div>
+
+<h3>Photo Gallery</h3>
+
+<p>
+Explore photographs and memories from NGO activities.
+</p>
+
+<a href="Photo%20Gallery/Gallery.md">
+View Gallery
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📖</div>
+
+<h3>Volunteer Handbook</h3>
+
+<p>
+Guidelines and useful information for NGO volunteers.
+</p>
+
+<a href="Volunteer%20Handbook/Volunteer%20Handbook.md">
+View Handbook
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📢</div>
+
+<h3>Awareness Materials</h3>
+
+<p>
+Educational, environmental and health awareness resources.
+</p>
+
+<a href="Awareness%20Materials/Education%20awareness.md">
+Education
+</a>
+
+<a href="Awareness%20Materials/Environmental%20Awareness.md">
+Environment
+</a>
+
+<a href="Awareness%20Materials/Health%20awareness.md">
+Health
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- OBJECTIVES -->
+
+<section>
+
+<div class="section-title">
+
+<h2>✨ Our Objectives</h2>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="icon">📚</div>
+<h3>Education</h3>
+<p>Promote education and learning opportunities.</p>
+</div>
+
+<div class="card">
+<div class="icon">🌳</div>
+<h3>Environment</h3>
+<p>Encourage environmental awareness and responsibility.</p>
+</div>
+
+<div class="card">
+<div class="icon">❤️</div>
+<h3>Health</h3>
+<p>Spread awareness about healthy living and hygiene.</p>
+</div>
+
+<div class="card">
+<div class="icon">🤝</div>
+<h3>Community</h3>
+<p>Support communities through meaningful social initiatives.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- VOLUNTEER -->
+
+<section class="volunteer" id="volunteer">
+
+<h2>🤝 Become a Volunteer</h2>
+
+<p>
+Every small contribution can create a meaningful change.
+Join us in building a better and more caring community.
+</p>
+
+<a href="Volunteer%20Handbook/Volunteer%20Handbook.md" class="button">
+Read Volunteer Handbook
+</a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p><strong>🌉 HopeBridge Foundation</strong></p>
+
+<p>Building a Better Future Together</p>
+
+<p>© 2026 HopeBridge Foundation | NGO Documentation Management System</p>
+
+</footer>
+
 </body>
 </html>
