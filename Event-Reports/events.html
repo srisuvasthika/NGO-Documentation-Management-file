@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HopeBridge Foundation | Event Reports</title>
+
+<style>
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26352c;
+    background: #f6faf7;
+    line-height: 1.7;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 16px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+
+    background: #e5f4e9;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.logo-text h2 {
+    color: #176b3a;
+    font-size: 21px;
+}
+
+.logo-text p {
+    color: #718078;
+    font-size: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #34433a;
+
+    margin-left: 22px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #16803c;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20,91,50,0.70),
+            rgba(20,91,50,0.70)
+        ),
+        url("https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 80px 25px;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+    border-radius: 30px;
+
+    margin-bottom: 22px;
+
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 55px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+
+    color: #e7f4ea;
+}
+
+
+/* ================= GENERAL SECTIONS ================= */
+
+.container {
+    max-width: 1150px;
+
+    margin: auto;
+
+    padding: 75px 25px;
+}
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    color: #176b3a;
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #68756d;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* ================= INTRODUCTION ================= */
+
+.intro {
+    background: white;
+}
+
+.intro-box {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 40px;
+
+    background: #f1f8f3;
+
+    border-radius: 18px;
+
+    border: 1px solid #dcebe1;
+
+    text-align: center;
+}
+
+.intro-box h3 {
+    color: #176b3a;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+
+/* ================= EVENT REPORTS ================= */
+
+.events {
+    background: #f6faf7;
+}
+
+.event-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 30px;
+}
+
+.event-card {
+    background: white;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #e0ebe3;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 32px rgba(0,0,0,0.12);
+}
+
+.event-image {
+    width: 100%;
+
+    height: 260px;
+
+    object-fit: cover;
+}
+
+.event-content {
+    padding: 30px;
+}
+
+.event-number {
+    display: inline-block;
+
+    background: #e7f5eb;
+
+    color: #176b3a;
+
+    padding: 6px 13px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.event-content h3 {
+    color: #176b3a;
+
+    font-size: 24px;
+
+    margin-bottom: 12px;
+}
+
+.event-content > p {
+    color: #59665e;
+
+    margin-bottom: 18px;
+}
+
+.event-info {
+    background: #f2f7f3;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+}
+
+.event-info p {
+    margin: 5px 0;
+
+    font-size: 14px;
+
+    color: #59665e;
+}
+
+.read-button {
+    display: inline-block;
+
+    background: #176b3a;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.read-button:hover {
+    background: #0f542c;
+}
+
+
+/* ================= EVENT IMPACT ================= */
+
+.impact {
+    background: white;
+}
+
+.impact-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.impact-card {
+    text-align: center;
+
+    background: #f5faf6;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    border: 1px solid #e0ebe3;
+}
+
+.impact-icon {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.impact-card h3 {
+    color: #176b3a;
+
+    margin-bottom: 8px;
+}
+
+
+/* ================= QUOTE ================= */
+
+.quote {
+    padding: 100px 25px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20,91,50,0.75),
+            rgba(20,91,50,0.75)
+        ),
+        url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.quote h2 {
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 32px;
+
+    line-height: 1.5;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+    background: #f6faf7;
+}
+
+.cta-box {
+    background: #eaf6ed;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.cta-box h2 {
+    color: #176b3a;
+
+    margin-bottom: 12px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #123d27;
+
+    color: white;
+
+    padding: 45px 25px;
+
+    text-align: center;
+}
+
+footer p {
+    color: #cbdcd1;
+}
+
+.back-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: white;
+
+    color: #176b3a;
+
+    padding: 11px 22px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .event-grid,
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 60px 18px;
+    }
+
+    .quote h2 {
+        font-size: 25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+🌱
+</div>
+
+<div class="logo-text">
+
+<h2>HopeBridge Foundation</h2>
+
+<p>
+Building a Better Future Together
+</p>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="../index.html#documents">
+Documents
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<span class="badge">
+🌍 COMMUNITY • ACTION • IMPACT
+</span>
+
+<h1>
+Our Event Reports
+</h1>
+
+<p>
+Discover the activities, initiatives and community
+programs organized by HopeBridge Foundation.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= INTRODUCTION ================= -->
+
+<section class="intro">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+📅 Community Events
+</h2>
+
+<p>
+Working together through meaningful activities
+to create positive change.
+</p>
+
+</div>
+
+
+<div class="intro-box">
+
+<h3>
+🤝 Making a Difference Together
+</h3>
+
+<p>
+
+HopeBridge Foundation organizes community-based
+activities that encourage participation,
+awareness and positive action.
+
+Explore our event reports below to learn about
+the activities, objectives, outcomes and
+community participation.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= EVENT REPORTS ================= -->
+
+<section class="events">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+🌱 Explore Our Events
+</h2>
+
+<p>
+Read the complete reports of our community
+initiatives.
+</p>
+
+</div>
+
+
+<div class="event-grid">
+
+
+<!-- =================================================
+     EVENT 1
+================================================= -->
+
+<div class="event-card">
+
+<img
+class="event-image"
+src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?auto=format&fit=crop&w=1200&q=85"
+alt="Tree plantation activity">
+
+<div class="event-content">
+
+<span class="event-number">
+EVENT REPORT 01
+</span>
+
+<h3>
+🌳 Tree Plantation Drive
+</h3>
+
+<p>
+A community environmental activity encouraging
+people to plant and care for trees and create
+a greener environment.
+</p>
+
+
+<div class="event-info">
+
+<p>
+<strong>📅 Date:</strong>
+15 August 2026
+</p>
+
+<p>
+<strong>📍 Location:</strong>
+Community Park, Chennai
+</p>
+
+<p>
+<strong>🌱 Theme:</strong>
+Environmental Awareness
+</p>
+
+</div>
+
+
+<a
+href="event%201.html"
+class="read-button">
+
+Read Full Report →
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- =================================================
+     EVENT 2 — EDUCATION AWARENESS CAMP
+================================================= -->
+
+<div class="event-card">
+
+<img
+class="event-image"
+src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85"
+alt="Education awareness camp">
+
+<div class="event-content">
+
+<span class="event-number">
+EVENT REPORT 02
+</span>
+
+<h3>
+🎓 Education Awareness Camp
+</h3>
+
+<p>
+An educational awareness program organized to
+encourage students to understand the importance
+of education, develop good learning habits and
+discover opportunities for their future.
+</p>
+
+
+<div class="event-info">
+
+<p>
+<strong>📅 Date:</strong>
+20 August 2026
+</p>
+
+<p>
+<strong>📍 Location:</strong>
+Community Centre, Chennai
+</p>
+
+<p>
+<strong>🎓 Theme:</strong>
+Education Awareness
+</p>
+
+</div>
+
+
+<a
+href="event%202.html"
+class="read-button">
+
+Read Full Report →
+
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= IMPACT ================= -->
+
+<section class="impact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+💚 Event Impact
+</h2>
+
+<p>
+Every event creates an opportunity for people
+to learn, participate and contribute.
+</p>
+
+</div>
+
+
+<div class="impact-grid">
+
+
+<div class="impact-card">
+
+<div class="impact-icon">
+🌱
+</div>
+
+<h3>
+Environmental Action
+</h3>
+
+<p>
+Encouraging communities to care for their
+surroundings and natural resources.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<div class="impact-icon">
+🎓
+</div>
+
+<h3>
+Educational Awareness
+</h3>
+
+<p>
+Encouraging students to value education,
+learning and future opportunities.
+</p>
+
+</div>
+
+
+<div class="impact-card">
+
+<div class="impact-icon">
+🤝
+</div>
+
+<h3>
+Community Participation
+</h3>
+
+<p>
+Bringing volunteers and community members
+together for meaningful activities.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= QUOTE ================= -->
+
+<section class="quote">
+
+<h2>
+
+“Small actions become powerful when
+communities work together.”
+
+</h2>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box">
+
+<h2>
+🤝 Be Part of the Change
+</h2>
+
+<p>
+Together, we can create meaningful activities
+and build stronger communities.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>
+🌱 HopeBridge Foundation
+</h3>
+
+<p>
+Building a Better Future Together
+</p>
+
+<a
+href="../index.html"
+class="back-button">
+
+← Back to Main Website
+
+</a>
+
+<p style="margin-top:25px;font-size:13px;">
+
+© 2026 HopeBridge Foundation
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
