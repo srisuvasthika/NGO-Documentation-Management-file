@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HopeBridge Foundation | Event Report 2</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5faf7;
+    color: #26352c;
+    line-height: 1.7;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 16px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    background: #e5f4e9;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.logo h2 {
+    color: #176b3a;
+    font-size: 21px;
+}
+
+.logo p {
+    color: #718078;
+    font-size: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #34433a;
+    margin-left: 22px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #16803c;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20,91,50,0.70),
+            rgba(20,91,50,0.70)
+        ),
+        url("https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #e7f4ea;
+}
+
+/* ================= GENERAL ================= */
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 75px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    color: #176b3a;
+    font-size: 35px;
+}
+
+.section-title p {
+    color: #68756d;
+}
+
+/* ================= EVENT DETAILS ================= */
+
+.details {
+    background: white;
+}
+
+.details-box {
+    max-width: 850px;
+    margin: auto;
+
+    background: #f1f8f3;
+    padding: 30px;
+
+    border-radius: 18px;
+    border: 1px solid #dcebe1;
+}
+
+.details-box p {
+    padding: 8px 0;
+}
+
+.details-box strong {
+    color: #176b3a;
+}
+
+/* ================= EVENT IMAGE ================= */
+
+.event-image {
+    width: 100%;
+    height: 380px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+/* ================= DESCRIPTION ================= */
+
+.description {
+    background: #f7faf8;
+}
+
+.description-box {
+    background: white;
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+}
+
+/* ================= HIGHLIGHTS ================= */
+
+.highlights {
+    background: white;
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.highlight-card {
+    background: #f5faf7;
+    padding: 30px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e0ebe3;
+
+    text-align: center;
+}
+
+.highlight-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.highlight-card h3 {
+    color: #176b3a;
+    margin-bottom: 8px;
+}
+
+/* ================= OUTCOMES ================= */
+
+.outcomes {
+    background: #176b3a;
+    color: white;
+}
+
+.outcomes .section-title h2 {
+    color: white;
+}
+
+.outcomes .section-title p {
+    color: #dceee2;
+}
+
+.outcome-list {
+    max-width: 800px;
+    margin: auto;
+}
+
+.outcome {
+    background: rgba(255,255,255,0.10);
+
+    padding: 17px 22px;
+
+    border-radius: 10px;
+
+    margin-bottom: 12px;
+}
+
+/* ================= QUOTE ================= */
+
+.quote {
+    padding: 75px 25px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(18,83,45,0.78),
+            rgba(18,83,45,0.78)
+        ),
+        url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.quote h2 {
+    max-width: 800px;
+    margin: auto;
+
+    font-size: 31px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #123d27;
+    color: white;
+    text-align: center;
+    padding: 40px 25px;
+}
+
+footer p {
+    color: #cbdcd1;
+}
+
+.back {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 11px 22px;
+
+    background: white;
+    color: #176b3a;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-image {
+        height: 280px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+🌱
+</div>
+
+<div>
+<h2>HopeBridge Foundation</h2>
+<p>Building a Better Future Together</p>
+</div>
+
+</div>
+
+<nav>
+
+<a href="../index.html">Home</a>
+
+<a href="../index.html#documents">
+Documents
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+🩺 Health Awareness Camp
+</h1>
+
+<p>
+Event Report 02 • HopeBridge Foundation
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= EVENT DETAILS ================= -->
+
+<section class="details">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>📋 Event Details</h2>
+
+<p>
+Important information about the activity.
+</p>
+
+</div>
+
+
+<div class="details-box">
+
+<p>
+<strong>🏢 Organization:</strong>
+HopeBridge Foundation
+</p>
+
+<p>
+<strong>📅 Event Name:</strong>
+Health Awareness Camp
+</p>
+
+<p>
+<strong>📆 Date:</strong>
+20 August 2026
+</p>
+
+<p>
+<strong>📍 Location:</strong>
+Community Centre, Chennai
+</p>
+
+<p>
+<strong>👥 Participants:</strong>
+Volunteers and community members
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= EVENT IMAGE ================= -->
+
+<section>
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>📸 Event Moment</h2>
+
+</div>
+
+<img
+class="event-image"
+src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1800&q=85"
+alt="Health awareness activity">
+
+</div>
+
+</section>
+
+
+<!-- ================= DESCRIPTION ================= -->
+
+<section class="description">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>🩺 About the Event</h2>
+
+</div>
+
+<div class="description-box">
+
+<p>
+
+HopeBridge Foundation organized a Health Awareness Camp
+to encourage community members to understand the importance
+of healthy living, personal hygiene and preventive care.
+
+</p>
+
+<p style="margin-top:15px;">
+
+Volunteers shared useful information about healthy habits,
+cleanliness, nutrition and the importance of seeking
+professional healthcare when necessary.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= HIGHLIGHTS ================= -->
+
+<section class="highlights">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>✨ Event Highlights</h2>
+
+<p>
+Key activities conducted during the event.
+</p>
+
+</div>
+
+
+<div class="highlight-grid">
+
+
+<div class="highlight-card">
+
+<div class="highlight-icon">
+🩺
+</div>
+
+<h3>Health Awareness</h3>
+
+<p>
+Participants learned about healthy habits and preventive care.
+</p>
+
+</div>
+
+
+<div class="highlight-card">
+
+<div class="highlight-icon">
+🧼
+</div>
+
+<h3>Hygiene Education</h3>
+
+<p>
+Volunteers discussed the importance of personal hygiene.
+</p>
+
+</div>
+
+
+<div class="highlight-card">
+
+<div class="highlight-icon">
+🥗
+</div>
+
+<h3>Healthy Lifestyle</h3>
+
+<p>
+Participants received guidance about nutrition and healthy living.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= OUTCOMES ================= -->
+
+<section class="outcomes">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>🎯 Event Outcomes</h2>
+
+<p>
+The positive results of the activity.
+</p>
+
+</div>
+
+
+<div class="outcome-list">
+
+<div class="outcome">
+❤️ Increased awareness about healthy lifestyle choices.
+</div>
+
+<div class="outcome">
+🧼 Improved understanding of personal hygiene.
+</div>
+
+<div class="outcome">
+🥗 Promoted awareness about balanced nutrition.
+</div>
+
+<div class="outcome">
+🤝 Encouraged community participation in health activities.
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= QUOTE ================= -->
+
+<section class="quote">
+
+<h2>
+“Healthy communities begin with informed and caring people.”
+</h2>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>🌱 HopeBridge Foundation</h3>
+
+<p>
+Building a Better Future Together
+</p>
+
+<a class="back" href="../index.html">
+← Back to Main Website
+</a>
+
+<p style="margin-top:25px;font-size:13px;">
+© 2026 HopeBridge Foundation
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
