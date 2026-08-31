@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HopeBridge Foundation | Education Awareness</title>
+
+<style>
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6faf7;
+    color: #26352c;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 75px 25px;
+}
+
+section {
+    padding: 0;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 16px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+
+    background: #e4f4e8;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.logo-text h2 {
+    color: #176b3a;
+    font-size: 21px;
+}
+
+.logo-text p {
+    color: #718078;
+    font-size: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #34433a;
+
+    margin-left: 22px;
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #16803c;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(21,95,52,0.72),
+            rgba(21,95,52,0.72)
+        ),
+        url("https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 1150px;
+    width: 100%;
+
+    margin: auto;
+
+    padding: 80px 25px;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+    border-radius: 30px;
+
+    margin-bottom: 22px;
+
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 55px;
+
+    max-width: 750px;
+
+    line-height: 1.15;
+
+    margin-bottom: 22px;
+}
+
+.hero p {
+    max-width: 700px;
+
+    font-size: 19px;
+
+    color: #e8f4eb;
+
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    background: white;
+
+    color: #176b3a;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    color: #176b3a;
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #68756d;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* ================= INTRODUCTION ================= */
+
+.introduction {
+    background: white;
+}
+
+.intro-box {
+    max-width: 900px;
+
+    margin: auto;
+
+    background: #f1f8f3;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    border: 1px solid #dcebe1;
+
+    text-align: center;
+}
+
+.intro-box h3 {
+    color: #176b3a;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= IMPORTANCE ================= */
+
+.importance {
+    background: #f6faf7;
+}
+
+.importance-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.info-card {
+    background: white;
+
+    padding: 32px 28px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e0ebe3;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+}
+
+.icon {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    color: #176b3a;
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================= EDUCATION AREAS ================= */
+
+.education-areas {
+    background: white;
+}
+
+.area-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 25px;
+}
+
+.area-card {
+    background: #f5faf6;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    border-left: 5px solid #2e8b57;
+
+    border-top: 1px solid #e0ebe3;
+
+    border-right: 1px solid #e0ebe3;
+
+    border-bottom: 1px solid #e0ebe3;
+}
+
+.area-card h3 {
+    color: #176b3a;
+
+    margin-bottom: 10px;
+}
+
+.area-card ul {
+    margin-left: 20px;
+}
+
+
+/* ================= IMAGE SECTION ================= */
+
+.image-section {
+    background: #f6faf7;
+}
+
+.main-image {
+    width: 100%;
+
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+
+/* ================= TIPS ================= */
+
+.tips {
+    background: white;
+}
+
+.tips-box {
+    max-width: 850px;
+
+    margin: auto;
+
+    background: #eaf6ed;
+
+    padding: 40px;
+
+    border-radius: 18px;
+}
+
+.tips-box h3 {
+    color: #176b3a;
+
+    margin-bottom: 18px;
+}
+
+.tips-box ul {
+    margin-left: 22px;
+}
+
+.tips-box li {
+    margin-bottom: 10px;
+}
+
+
+/* ================= QUOTE ================= */
+
+.quote {
+    padding: 100px 25px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20,91,50,0.75),
+            rgba(20,91,50,0.75)
+        ),
+        url("https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.quote h2 {
+    max-width: 850px;
+
+    margin: auto;
+
+    font-size: 32px;
+
+    line-height: 1.5;
+}
+
+.quote p {
+    margin-top: 18px;
+
+    color: #dceee2;
+}
+
+
+/* ================= CALL TO ACTION ================= */
+
+.cta {
+    background: #f6faf7;
+}
+
+.cta-box {
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    border: 1px solid #dfebe2;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.cta-box h2 {
+    color: #176b3a;
+
+    margin-bottom: 12px;
+}
+
+.cta-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: #176b3a;
+
+    color: white;
+
+    padding: 13px 24px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #123d27;
+
+    color: white;
+
+    padding: 45px 25px;
+
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #cbdcd1;
+}
+
+.back-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: white;
+
+    color: #176b3a;
+
+    padding: 11px 22px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .importance-grid,
+    .area-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-image {
+        height: 280px;
+    }
+
+    .quote h2 {
+        font-size: 25px;
+    }
+
+    .container {
+        padding: 60px 18px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+🌱
+</div>
+
+<div class="logo-text">
+
+<h2>HopeBridge Foundation</h2>
+
+<p>
+Building a Better Future Together
+</p>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="../index.html#documents">
+Documents
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<span class="badge">
+🎓 EDUCATION AWARENESS
+</span>
+
+<h1>
+Education Creates Opportunities
+</h1>
+
+<p>
+Education gives individuals the knowledge, skills and
+confidence they need to build a better future and
+contribute positively to their communities.
+</p>
+
+<a href="#importance" class="hero-button">
+Explore Education Awareness
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= INTRODUCTION ================= -->
+
+<section class="introduction">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+📚 Introduction
+</h2>
+
+<p>
+Understanding why education matters to individuals
+and communities.
+</p>
+
+</div>
+
+
+<div class="intro-box">
+
+<h3>
+🌱 The Power of Education
+</h3>
+
+<p>
+
+Education is an important foundation for personal
+development and community progress. It helps people
+develop knowledge, practical skills, critical thinking
+and confidence.
+
+</p>
+
+<p style="margin-top:15px;">
+
+At HopeBridge Foundation, we believe that access to
+learning opportunities can help people discover their
+potential and create positive change around them.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= IMPORTANCE ================= -->
+
+<section class="importance" id="importance">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+🎓 Importance of Education
+</h2>
+
+<p>
+Education can create lasting benefits for individuals,
+families and communities.
+</p>
+
+</div>
+
+
+<div class="importance-grid">
+
+
+<div class="info-card">
+
+<div class="icon">
+🧠
+</div>
+
+<h3>
+Knowledge & Skills
+</h3>
+
+<p>
+Education helps people gain knowledge and develop
+skills that can be useful in everyday life and work.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="icon">
+💡
+</div>
+
+<h3>
+Critical Thinking
+</h3>
+
+<p>
+Learning encourages people to ask questions,
+understand information and make informed decisions.
+</p>
+
+</div>
+
+
+<div class="info-card">
+
+<div class="icon">
+🚀
+</div>
+
+<h3>
+Future Opportunities
+</h3>
+
+<p>
+Education can open pathways to further learning,
+employment and personal growth.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= EDUCATION AREAS ================= -->
+
+<section class="education-areas">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+🌍 Key Areas of Education Awareness
+</h2>
+
+<p>
+Simple steps that can encourage learning within
+communities.
+</p>
+
+</div>
+
+
+<div class="area-grid">
+
+
+<div class="area-card">
+
+<h3>
+📖 Encourage Reading
+</h3>
+
+<p>
+Reading regularly helps develop vocabulary,
+knowledge and imagination.
+</p>
+
+<ul>
+
+<li>Read books and educational materials.</li>
+
+<li>Visit libraries when possible.</li>
+
+<li>Share useful learning resources.</li>
+
+</ul>
+
+</div>
+
+
+<div class="area-card">
+
+<h3>
+💻 Digital Learning
+</h3>
+
+<p>
+Technology can provide access to many useful
+educational resources.
+</p>
+
+<ul>
+
+<li>Use trusted online learning resources.</li>
+
+<li>Develop basic digital skills.</li>
+
+<li>Learn responsibly and safely online.</li>
+
+</ul>
+
+</div>
+
+
+<div class="area-card">
+
+<h3>
+👩‍🏫 Support Students
+</h3>
+
+<p>
+Community members can encourage children and
+young people in their learning journey.
+</p>
+
+<ul>
+
+<li>Provide study guidance.</li>
+
+<li>Encourage regular learning.</li>
+
+<li>Celebrate educational achievements.</li>
+
+</ul>
+
+</div>
+
+
+<div class="area-card">
+
+<h3>
+🤝 Community Learning
+</h3>
+
+<p>
+Learning becomes stronger when people share
+knowledge and support one another.
+</p>
+
+<ul>
+
+<li>Organize educational activities.</li>
+
+<li>Share knowledge with others.</li>
+
+<li>Encourage lifelong learning.</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= IMAGE ================= -->
+
+<section class="image-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+📸 Learning & Community
+</h2>
+
+<p>
+Education grows stronger when communities work together.
+</p>
+
+</div>
+
+
+<img
+class="main-image"
+src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1800&q=85"
+alt="Students learning together">
+
+</div>
+
+</section>
+
+
+<!-- ================= TIPS ================= -->
+
+<section class="tips">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+✅ How We Can Support Education
+</h2>
+
+<p>
+Everyone can contribute to creating a culture of learning.
+</p>
+
+</div>
+
+
+<div class="tips-box">
+
+<h3>
+🌱 Simple Ways to Help
+</h3>
+
+<ul>
+
+<li>
+Encourage children and young people to continue learning.
+</li>
+
+<li>
+Share books and educational resources with others.
+</li>
+
+<li>
+Support community learning programs.
+</li>
+
+<li>
+Volunteer your time for educational activities.
+</li>
+
+<li>
+Help create a positive and supportive learning environment.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= QUOTE ================= -->
+
+<section class="quote">
+
+<h2>
+“Education is a bridge that connects dreams
+with opportunities.”
+</h2>
+
+<p>
+— HopeBridge Foundation
+</p>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box">
+
+<h2>
+🤝 Together, We Can Support Learning
+</h2>
+
+<p>
+When communities encourage education, they help
+create opportunities for a brighter future.
+</p>
+
+<a
+href="../index.html#contact"
+class="cta-button">
+
+Contact HopeBridge Foundation
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>
+🌱 HopeBridge Foundation
+</h3>
+
+<p>
+Building a Better Future Together
+</p>
+
+<a
+href="../index.html"
+class="back-button">
+
+← Back to Main Website
+
+</a>
+
+<p style="margin-top:25px;font-size:13px;">
+
+© 2026 HopeBridge Foundation
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
