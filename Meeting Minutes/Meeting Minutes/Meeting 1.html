@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Meeting 1 | HopeBridge Foundation</title>
+
+<style>
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26352c;
+    background: #f5faf7;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+section {
+    padding: 70px 25px;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 18px rgba(0,0,0,0.10);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 15px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+
+    background: #e5f5ea;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.logo-text h2 {
+    color: #176b3a;
+    font-size: 20px;
+}
+
+.logo-text p {
+    color: #68756d;
+    font-size: 11px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: #34443a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #16803c;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20,91,50,0.75),
+            rgba(20,91,50,0.75)
+        ),
+        url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+
+    padding: 80px 25px;
+}
+
+.badge {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+    border-radius: 30px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+.hero h1 {
+
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    max-width: 850px;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+
+    max-width: 720px;
+
+    font-size: 18px;
+
+    color: #e7f4ea;
+
+    margin-bottom: 30px;
+}
+
+.btn {
+
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    margin-right: 10px;
+}
+
+.btn-primary {
+
+    background: white;
+
+    color: #176b3a;
+}
+
+.btn-outline {
+
+    border: 1px solid white;
+
+    color: white;
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+
+    color: #176b3a;
+
+    font-size: 34px;
+
+    margin-bottom: 10px;
+}
+
+.section-title p {
+
+    color: #68756d;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* ================= MEETING DETAILS ================= */
+
+.details {
+
+    background: white;
+}
+
+.details-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 20px;
+}
+
+.detail-card {
+
+    background: #f4faf6;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border: 1px solid #dcebe0;
+
+    transition: 0.3s;
+}
+
+.detail-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.08);
+}
+
+.detail-card .icon {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.detail-card h3 {
+
+    color: #176b3a;
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+
+/* ================= OBJECTIVES ================= */
+
+.objectives {
+
+    background: #f5faf7;
+}
+
+.objectives-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 16px;
+
+    border-left: 6px solid #2e8b57;
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,0.06);
+}
+
+.objectives-box > p {
+
+    margin-bottom: 20px;
+
+    color: #46554c;
+}
+
+.objectives-box li {
+
+    margin: 12px 0;
+
+    margin-left: 25px;
+}
+
+
+/* ================= DISCUSSIONS ================= */
+
+.discussions {
+
+    background: white;
+}
+
+.discussion-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 22px;
+}
+
+.discussion-card {
+
+    background: #f5faf7;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    border: 1px solid #dcebe0;
+
+    transition: 0.3s;
+}
+
+.discussion-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.08);
+}
+
+.discussion-icon {
+
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+.discussion-card h3 {
+
+    color: #176b3a;
+
+    margin-bottom: 10px;
+
+    font-size: 21px;
+}
+
+
+/* ================= DECISIONS ================= */
+
+.decisions {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e5f5ea,
+            #f9fcfa
+        );
+}
+
+.decision-list {
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.decision {
+
+    background: white;
+
+    padding: 20px 25px;
+
+    margin-bottom: 15px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #2e8b57;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.05);
+}
+
+.decision span {
+
+    font-size: 24px;
+
+    margin-right: 10px;
+}
+
+
+/* ================= RESPONSIBILITIES ================= */
+
+.responsibilities {
+
+    background: white;
+}
+
+.table-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 22px rgba(0,0,0,0.07);
+}
+
+.table-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1.3fr 1fr;
+
+    border-bottom:
+        1px solid #e2ebe4;
+}
+
+.table-row:last-child {
+
+    border-bottom: none;
+}
+
+.table-row div {
+
+    padding: 18px 25px;
+}
+
+.table-heading {
+
+    background: #176b3a;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* ================= ACTION ITEMS ================= */
+
+.actions {
+
+    background: #f5faf7;
+}
+
+.action-grid {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 18px;
+}
+
+.action-card {
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 14px;
+
+    border: 1px solid #dcebe0;
+
+}
+
+.action-card span {
+
+    font-size: 25px;
+
+    margin-right: 8px;
+}
+
+
+/* ================= IMAGE BANNER ================= */
+
+.image-banner {
+
+    min-height: 400px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(18,100,55,0.68),
+            rgba(18,100,55,0.68)
+        ),
+        url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.image-banner h2 {
+
+    max-width: 800px;
+
+    font-size: 38px;
+
+    line-height: 1.4;
+}
+
+
+/* ================= CONCLUSION ================= */
+
+.conclusion {
+
+    background: #176b3a;
+
+    color: white;
+
+    text-align: center;
+}
+
+.conclusion h2 {
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+.conclusion p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #dceee2;
+
+    font-size: 17px;
+}
+
+.quote {
+
+    margin-top: 25px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+/* ================= PREPARED BY ================= */
+
+.prepared {
+
+    background: white;
+
+    text-align: center;
+
+    padding: 50px 25px;
+}
+
+.prepared h3 {
+
+    color: #176b3a;
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+.prepared p {
+
+    color: #59675f;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background: #123d27;
+
+    color: white;
+
+    padding: 40px 25px 20px;
+
+    text-align: center;
+}
+
+footer h3 {
+
+    margin-bottom: 10px;
+}
+
+footer p {
+
+    color: #cbdcd1;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+.footer-links {
+
+    margin: 20px 0;
+}
+
+.footer-links a {
+
+    color: #cbdcd1;
+
+    margin: 0 10px;
+
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+
+    color: white;
+}
+
+.copyright {
+
+    border-top:
+        1px solid rgba(255,255,255,0.2);
+
+    margin-top: 25px;
+
+    padding-top: 18px;
+
+    color: #b9cec0;
+
+    font-size: 13px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .discussion-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .action-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-banner h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .table-box {
+        overflow-x: auto;
+    }
+
+    .table-row {
+        min-width: 600px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+🌱
+</div>
+
+<div class="logo-text">
+
+<h2>
+HopeBridge Foundation
+</h2>
+
+<p>
+Building a Better Future Together
+</p>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<ul>
+
+<li>
+<a href="../index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="../index.html#about">
+About
+</a>
+</li>
+
+<li>
+<a href="../index.html#programs">
+Programs
+</a>
+</li>
+
+<li>
+<a href="../index.html#documents">
+Documents
+</a>
+</li>
+
+<li>
+<a href="../index.html#contact">
+Contact
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<span class="badge">
+📝 Meeting Minutes — 01
+</span>
+
+<h1>
+Volunteer Planning Meeting
+</h1>
+
+<p>
+
+HopeBridge Foundation meeting focused on planning
+upcoming community activities and organizing
+volunteers effectively.
+
+</p>
+
+<a
+href="#details"
+class="btn btn-primary">
+
+View Meeting Details ↓
+
+</a>
+
+<a
+href="../index.html"
+class="btn btn-outline">
+
+← Back to Home
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= MEETING DETAILS ================= -->
+
+<section
+class="details"
+id="details">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+📌 Meeting Details
+</h2>
+
+<p>
+Important information about the meeting.
+</p>
+
+</div>
+
+
+<div class="details-grid">
+
+
+<div class="detail-card">
+
+<div class="icon">
+🏢
+</div>
+
+<h3>
+Organization
+</h3>
+
+<p>
+HopeBridge Foundation
+</p>
+
+</div>
+
+
+<div class="detail-card">
+
+<div class="icon">
+📅
+</div>
+
+<h3>
+Date
+</h3>
+
+<p>
+10 August 2026
+</p>
+
+</div>
+
+
+<div class="detail-card">
+
+<div class="icon">
+⏰
+</div>
+
+<h3>
+Time
+</h3>
+
+<p>
+10:00 AM
+</p>
+
+</div>
+
+
+<div class="detail-card">
+
+<div class="icon">
+📍
+</div>
+
+<h3>
+Location
+</h3>
+
+<p>
+Community Centre, Chennai
+</p>
+
+</div>
+
+
+<div class="detail-card">
+
+<div class="icon">
+👥
+</div>
+
+<h3>
+Meeting Type
+</h3>
+
+<p>
+Volunteer Planning Meeting
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= OBJECTIVES ================= -->
+
+<section class="objectives">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+🎯 Meeting Objectives
+</h2>
+
+<p>
+The main goals discussed during the meeting.
+</p>
+
+</div>
+
+
+<div class="objectives-box">
+
+<p>
+
+The meeting was conducted to discuss upcoming
+community activities and organize volunteers effectively.
+
+</p>
+
+<ul>
+
+<li>
+🎓 Plan an education awareness program.
+</li>
+
+<li>
+🌳 Discuss an environmental activity.
+</li>
+
+<li>
+🩺 Plan a health awareness activity.
+</li>
+
+<li>
+🤝 Assign responsibilities to volunteers.
+</li>
+
+<li>
+📅 Prepare a schedule for upcoming events.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= DISCUSSIONS ================= -->
+
+<section class="discussions">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+💬 Key Discussions
+</h2>
+
+<p>
+Topics discussed by the members.
+</p>
+
+</div>
+
+
+<div class="discussion-grid">
+
+
+<div class="discussion-card">
+
+<div class="discussion-icon">
+🎓
+</div>
+
+<h3>
+Education Awareness
+</h3>
+
+<p>
+
+The members discussed conducting an education
+awareness program for students and encouraging
+better study habits.
+
+</p>
+
+</div>
+
+
+<div class="discussion-card">
+
+<div class="discussion-icon">
+🌳
+</div>
+
+<h3>
+Environmental Activities
+</h3>
+
+<p>
+
+The team discussed organizing a tree plantation
+drive and promoting environmental responsibility.
+
+</p>
+
+</div>
+
+
+<div class="discussion-card">
+
+<div class="discussion-icon">
+🩺
+</div>
+
+<h3>
+Health Awareness
+</h3>
+
+<p>
+
+The members discussed creating awareness about
+healthy habits, personal hygiene, clean water,
+and cleanliness.
+
+</p>
+
+</div>
+
+
+<div class="discussion-card">
+
+<div class="discussion-icon">
+🤝
+</div>
+
+<h3>
+Volunteer Participation
+</h3>
+
+<p>
+
+Volunteers were encouraged to participate actively
+and take responsibility for different activities.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= DECISIONS ================= -->
+
+<section class="decisions">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+📋 Decisions Taken
+</h2>
+
+</div>
+
+
+<div class="decision-list">
+
+
+<div class="decision">
+<span>🎓</span>
+An education awareness program will be organized.
+</div>
+
+
+<div class="decision">
+<span>🌳</span>
+A tree plantation activity will be planned.
+</div>
+
+
+<div class="decision">
+<span>🩺</span>
+Health awareness materials will be prepared.
+</div>
+
+
+<div class="decision">
+<span>🤝</span>
+Volunteers will be assigned different responsibilities.
+</div>
+
+
+<div class="decision">
+<span>📅</span>
+A schedule will be prepared for upcoming activities.
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= RESPONSIBILITIES ================= -->
+
+<section class="responsibilities">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+👥 Responsibilities
+</h2>
+
+<p>
+Responsibilities assigned to different teams.
+</p>
+
+</div>
+
+
+<div class="table-box">
+
+
+<div class="table-row table-heading">
+
+<div>
+Responsibility
+</div>
+
+<div>
+Assigned To
+</div>
+
+</div>
+
+
+<div class="table-row">
+
+<div>
+🎓 Education Program
+</div>
+
+<div>
+Education Team
+</div>
+
+</div>
+
+
+<div class="table-row">
+
+<div>
+🌳 Tree Plantation
+</div>
+
+<div>
+Environment Team
+</div>
+
+</div>
+
+
+<div class="table-row">
+
+<div>
+🩺 Health Awareness
+</div>
+
+<div>
+Health Team
+</div>
+
+</div>
+
+
+<div class="table-row">
+
+<div>
+📢 Awareness Materials
+</div>
+
+<div>
+Documentation Team
+</div>
+
+</div>
+
+
+<div class="table-row">
+
+<div>
+🤝 Volunteer Coordination
+</div>
+
+<div>
+Volunteer Team
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ACTION ITEMS ================= -->
+
+<section class="actions">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+✅ Action Items
+</h2>
+
+<p>
+Tasks to be completed after the meeting.
+</p>
+
+</div>
+
+
+<div class="action-grid">
+
+
+<div class="action-card">
+<span>📚</span>
+Prepare educational materials.
+</div>
+
+
+<div class="action-card">
+<span>🌱</span>
+Arrange plants and necessary materials.
+</div>
+
+
+<div class="action-card">
+<span>🩺</span>
+Prepare health awareness content.
+</div>
+
+
+<div class="action-card">
+<span>📞</span>
+Contact volunteers.
+</div>
+
+
+<div class="action-card">
+<span>📅</span>
+Finalize the event schedule.
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= IMAGE ================= -->
+
+<section class="image-banner">
+
+<div>
+
+<h2>
+🤝 “Together, we can create positive change.” 💚
+</h2>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONCLUSION ================= -->
+
+<section class="conclusion">
+
+<div class="container">
+
+<h2>
+🌱 Conclusion
+</h2>
+
+<p>
+
+The meeting concluded with a clear plan for
+upcoming activities.
+
+All members agreed to work together to support
+the mission of HopeBridge Foundation and create
+a positive impact in the community.
+
+</p>
+
+<div class="quote">
+
+"Together, we can create positive change." 💚
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PREPARED BY ================= -->
+
+<section class="prepared">
+
+<div class="container">
+
+<h3>
+📋 Prepared by
+</h3>
+
+<p>
+Documentation Team
+</p>
+
+<p>
+🌱 HopeBridge Foundation
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>
+🌱 HopeBridge Foundation
+</h3>
+
+<p>
+
+Building a better future through education,
+environment, health awareness and community action.
+
+</p>
+
+
+<div class="footer-links">
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="../index.html#about">
+About
+</a>
+
+<a href="../index.html#programs">
+Programs
+</a>
+
+<a href="../index.html#documents">
+Documents
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 HopeBridge Foundation.
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>
