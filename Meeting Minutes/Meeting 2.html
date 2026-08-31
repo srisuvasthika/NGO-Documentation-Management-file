@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Meeting 2 | HopeBridge Foundation</title>
+
+<style>
+
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26352c;
+    background: #f5faf7;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+section {
+    padding: 70px 25px;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 18px rgba(0,0,0,0.10);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 15px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    background: #e5f5ea;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.logo-text h2 {
+    color: #176b3a;
+    font-size: 20px;
+}
+
+.logo-text p {
+    color: #68756d;
+    font-size: 11px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+}
+
+nav a {
+    color: #34443a;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #16803c;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20,91,50,0.75),
+            rgba(20,91,50,0.75)
+        ),
+        url("https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+
+    max-width: 1150px;
+    width: 100%;
+    margin: auto;
+
+    padding: 80px 25px;
+}
+
+.badge {
+
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+    border-radius: 30px;
+
+    margin-bottom: 20px;
+
+    font-size: 14px;
+}
+
+.hero h1 {
+
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    max-width: 800px;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+
+    max-width: 700px;
+
+    font-size: 18px;
+
+    color: #e7f4ea;
+
+    margin-bottom: 30px;
+}
+
+.btn {
+
+    display: inline-block;
+
+    padding: 13px 24px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    margin-right: 10px;
+}
+
+.btn-primary {
+
+    background: white;
+
+    color: #176b3a;
+}
+
+.btn-outline {
+
+    border: 1px solid white;
+
+    color: white;
+}
+
+
+/* ================= SECTION TITLE ================= */
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+
+    color: #176b3a;
+
+    font-size: 34px;
+
+    margin-bottom: 10px;
+}
+
+.section-title p {
+
+    color: #68756d;
+
+    max-width: 700px;
+
+    margin: auto;
+}
+
+
+/* ================= MEETING DETAILS ================= */
+
+.details {
+
+    background: white;
+}
+
+.details-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 20px;
+}
+
+.detail-card {
+
+    background: #f4faf6;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #2e8b57;
+
+    border: 1px solid #dcebe0;
+
+    transition: 0.3s;
+}
+
+.detail-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.08);
+}
+
+.detail-card .icon {
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+}
+
+.detail-card h3 {
+
+    color: #176b3a;
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+}
+
+
+/* ================= PARTICIPANTS ================= */
+
+.participants {
+
+    background: #f5faf7;
+}
+
+.participant-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 20px;
+}
+
+.participant-card {
+
+    background: white;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    border: 1px solid #dcebe0;
+
+    transition: 0.3s;
+}
+
+.participant-card:hover {
+
+    transform: translateY(-6px);
+}
+
+.participant-card .icon {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.participant-card h3 {
+
+    color: #176b3a;
+
+    font-size: 16px;
+}
+
+
+/* ================= AGENDA ================= */
+
+.agenda {
+
+    background: white;
+}
+
+.agenda-list {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    background: #e9f7ee;
+
+    padding: 30px 40px;
+
+    border-radius: 16px;
+
+    border-left: 6px solid #2e8b57;
+}
+
+.agenda-list li {
+
+    margin: 12px 0;
+
+    padding-left: 5px;
+}
+
+
+/* ================= DISCUSSION ================= */
+
+.discussion {
+
+    background:
+        linear-gradient(
+            135deg,
+            #e5f5ea,
+            #f9fcfa
+        );
+}
+
+.content-box {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 6px 20px rgba(0,0,0,0.06);
+
+    border: 1px solid #dcebe0;
+}
+
+.content-box p {
+
+    font-size: 17px;
+
+    color: #46554c;
+}
+
+
+/* ================= DECISIONS ================= */
+
+.decisions {
+
+    background: white;
+}
+
+.decision-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 25px;
+}
+
+.decision-card {
+
+    background: #f4faf6;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border-top: 5px solid #2e8b57;
+
+}
+
+.decision-card .icon {
+
+    font-size: 35px;
+
+    margin-bottom: 10px;
+}
+
+.decision-card h3 {
+
+    color: #176b3a;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+
+/* ================= ACTION ITEMS ================= */
+
+.actions {
+
+    background: #f5faf7;
+}
+
+.table-box {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 7px 22px rgba(0,0,0,0.07);
+}
+
+.table-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1.2fr 1fr;
+
+    border-bottom:
+        1px solid #e2ebe4;
+}
+
+.table-row:last-child {
+
+    border-bottom: none;
+}
+
+.table-row div {
+
+    padding: 18px 20px;
+}
+
+.table-heading {
+
+    background: #176b3a;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+
+/* ================= IMAGE BANNER ================= */
+
+.image-banner {
+
+    min-height: 380px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(18,100,55,0.68),
+            rgba(18,100,55,0.68)
+        ),
+        url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.image-banner h2 {
+
+    max-width: 800px;
+
+    font-size: 38px;
+
+    line-height: 1.4;
+}
+
+
+/* ================= CONCLUSION ================= */
+
+.conclusion {
+
+    background: #176b3a;
+
+    color: white;
+
+    text-align: center;
+}
+
+.conclusion h2 {
+
+    font-size: 34px;
+
+    margin-bottom: 15px;
+}
+
+.conclusion p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #dceee2;
+
+    font-size: 17px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background: #123d27;
+
+    color: white;
+
+    padding: 40px 25px 20px;
+
+    text-align: center;
+}
+
+footer h3 {
+
+    margin-bottom: 10px;
+}
+
+footer p {
+
+    color: #cbdcd1;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+.footer-links {
+
+    margin: 20px 0;
+}
+
+.footer-links a {
+
+    color: #cbdcd1;
+
+    margin: 0 10px;
+
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+
+    color: white;
+}
+
+.copyright {
+
+    border-top:
+        1px solid rgba(255,255,255,0.2);
+
+    margin-top: 25px;
+
+    padding-top: 18px;
+
+    color: #b9cec0;
+
+    font-size: 13px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .participant-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .decision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-banner h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .participant-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .table-box {
+        overflow-x: auto;
+    }
+
+    .table-row {
+        min-width: 650px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+🌱
+</div>
+
+<div class="logo-text">
+
+<h2>
+HopeBridge Foundation
+</h2>
+
+<p>
+Building a Better Future Together
+</p>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<ul>
+
+<li>
+<a href="../index.html">
+Home
+</a>
+</li>
+
+<li>
+<a href="../index.html#about">
+About
+</a>
+</li>
+
+<li>
+<a href="../index.html#programs">
+Programs
+</a>
+</li>
+
+<li>
+<a href="../index.html#documents">
+Documents
+</a>
+</li>
+
+<li>
+<a href="../index.html#contact">
+Contact
+</a>
+</li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<span class="badge">
+📋 Meeting Minutes — 02
+</span>
+
+<h1>
+Documentation Review Meeting
+</h1>
+
+<p>
+
+A review meeting focused on event documentation,
+the volunteer handbook, awareness materials,
+and improvements to the documentation repository.
+
+</p>
+
+<a
+href="#details"
+class="btn btn-primary">
+
+View Meeting Details ↓
+
+</a>
+
+<a
+href="../index.html"
+class="btn btn-outline">
+
+← Back to Home
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ================= MEETING DETAILS ================= -->
+
+<section
+class="details"
+id="details">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+📋 Meeting Details
+</h2>
+
+<p>
+Important information about the documentation review meeting.
+</p>
+
+</div>
+
+
+<div class="details-grid">
+
+
+<div class="detail-card">
+
+<div class="icon">
+📝
+</div>
+
+<h3>
+Meeting Title
+</h3>
+
+<p>
+Documentation Review Meeting
+</p>
+
+</div>
+
+
+<div class="detail-card">
+
+<div class="icon">
+📅
+</div>
+
+<h3>
+Date
+</h3>
+
+<p>
+18 August 2026
+</p>
+
+</div>
+
+
+<div class="detail-card">
+
+<div class="icon">
+📍
+</div>
+
+<h3>
+Location
+</h3>
+
+<p>
+NGO Office, Chennai
+</p>
+
+</div>
+
+
+<div class="detail-card">
+
+<div class="icon">
+🔎
+</div>
+
+<h3>
+Meeting Type
+</h3>
+
+<p>
+Review Meeting
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PARTICIPANTS ================= -->
+
+<section class="participants">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+👥 Participants
+</h2>
+
+<p>
+Teams involved in the documentation review.
+</p>
+
+</div>
+
+
+<div class="participant-grid">
+
+
+<div class="participant-card">
+
+<div class="icon">
+👤
+</div>
+
+<h3>
+NGO Coordinator
+</h3>
+
+</div>
+
+
+<div class="participant-card">
+
+<div class="icon">
+📚
+</div>
+
+<h3>
+Documentation Team
+</h3>
+
+</div>
+
+
+<div class="participant-card">
+
+<div class="icon">
+🤝
+</div>
+
+<h3>
+Volunteer Representatives
+</h3>
+
+</div>
+
+
+<div class="participant-card">
+
+<div class="icon">
+💻
+</div>
+
+<h3>
+Project Team
+</h3>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= AGENDA ================= -->
+
+<section class="agenda">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+🗂️ Agenda
+</h2>
+
+</div>
+
+
+<div class="agenda-list">
+
+<ul>
+
+<li>
+Review completed event documentation.
+</li>
+
+<li>
+Discuss volunteer handbook.
+</li>
+
+<li>
+Discuss improvements to the documentation repository.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= DISCUSSION ================= -->
+
+<section class="discussion">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+💬 Discussion
+</h2>
+
+</div>
+
+
+<div class="content-box">
+
+<p>
+
+The team reviewed the documentation created for
+the Tree plantation Drive. The volunteer handbook
+and awareness materials were also discussed.
+The team identified areas where the documentation
+could be improved and organized more clearly.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= DECISIONS ================= -->
+
+<section class="decisions">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+✅ Decisions Made
+</h2>
+
+</div>
+
+
+<div class="decision-grid">
+
+
+<div class="decision-card">
+
+<div class="icon">
+📄
+</div>
+
+<h3>
+Event Documentation
+</h3>
+
+<p>
+
+Event documentation will be reviewed before
+final publication.
+
+</p>
+
+</div>
+
+
+<div class="decision-card">
+
+<div class="icon">
+📘
+</div>
+
+<h3>
+Volunteer Handbook
+</h3>
+
+<p>
+
+The volunteer handbook will be updated
+when necessary.
+
+</p>
+
+</div>
+
+
+<div class="decision-card">
+
+<div class="icon">
+📚
+</div>
+
+<h3>
+Awareness Materials
+</h3>
+
+<p>
+
+Awareness materials will be organized
+into separate categories.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= ACTION ITEMS ================= -->
+
+<section class="actions">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+📌 Action Items
+</h2>
+
+<p>
+Tasks agreed upon during the meeting.
+</p>
+
+</div>
+
+
+<div class="table-box">
+
+
+<div class="table-row table-heading">
+
+<div>
+Task
+</div>
+
+<div>
+Responsible Team
+</div>
+
+<div>
+Deadline
+</div>
+
+</div>
+
+
+<div class="table-row">
+
+<div>
+Review Event reports
+</div>
+
+<div>
+Documentation Team
+</div>
+
+<div>
+20 August 2026
+</div>
+
+</div>
+
+
+<div class="table-row">
+
+<div>
+Update Volunteer handbook
+</div>
+
+<div>
+Volunteer Team
+</div>
+
+<div>
+21 August 2026
+</div>
+
+</div>
+
+
+<div class="table-row">
+
+<div>
+Organize awareness materials
+</div>
+
+<div>
+Documentation Team
+</div>
+
+<div>
+21 August 2026
+</div>
+
+</div>
+
+
+<div class="table-row">
+
+<div>
+Review repository structure
+</div>
+
+<div>
+Project Team
+</div>
+
+<div>
+22 August 2026
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= IMAGE ================= -->
+
+<section class="image-banner">
+
+<div>
+
+<h2>
+🤝 “Good documentation helps a team work together, improve, and grow.”
+</h2>
+
+</div>
+
+</section>
+
+
+<!-- ================= CONCLUSION ================= -->
+
+<section class="conclusion">
+
+<div class="container">
+
+<h2>
+🌟 Conclusion
+</h2>
+
+<p>
+
+The meeting helped the team review the project's
+progress and identify improvements needed for
+better documentation management.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>
+🌱 HopeBridge Foundation
+</h3>
+
+<p>
+
+Building a better future through education,
+environment, health awareness and community action.
+
+</p>
+
+
+<div class="footer-links">
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="../index.html#about">
+About
+</a>
+
+<a href="../index.html#programs">
+Programs
+</a>
+
+<a href="../index.html#documents">
+Documents
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 HopeBridge Foundation.
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+</body>
+
+</html>
