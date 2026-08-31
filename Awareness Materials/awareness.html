@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HopeBridge Foundation | Awareness Materials</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #26352c;
+    background: #f6faf7;
+    line-height: 1.7;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 16px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    background: #e5f4e9;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.logo-text h2 {
+    color: #176b3a;
+    font-size: 21px;
+}
+
+.logo-text p {
+    color: #718078;
+    font-size: 12px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #34433a;
+    margin-left: 22px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #16803c;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20,91,50,0.70),
+            rgba(20,91,50,0.70)
+        ),
+        url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+    padding: 80px 25px;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border: 1px solid rgba(255,255,255,0.6);
+
+    border-radius: 30px;
+
+    margin-bottom: 22px;
+
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #e7f4ea;
+}
+
+/* ================= GENERAL ================= */
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 75px 25px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    color: #176b3a;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #68756d;
+}
+
+/* ================= INTRO ================= */
+
+.intro {
+    background: white;
+}
+
+.intro-box {
+    max-width: 850px;
+    margin: auto;
+
+    background: #f1f8f3;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    border: 1px solid #dcebe1;
+
+    text-align: center;
+}
+
+.intro-box h3 {
+    color: #176b3a;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+/* ================= MATERIALS ================= */
+
+.materials {
+    background: #f6faf7;
+}
+
+.material-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.material-card {
+    background: white;
+
+    padding: 35px 28px;
+
+    border-radius: 18px;
+
+    border: 1px solid #e0ebe3;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+}
+
+.material-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.11);
+}
+
+.material-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.material-card h3 {
+    color: #176b3a;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.material-card p {
+    color: #59665e;
+}
+
+.read-button {
+    display: inline-block;
+
+    margin-top: 22px;
+
+    padding: 11px 20px;
+
+    background: #176b3a;
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.read-button:hover {
+    background: #0f542c;
+}
+
+/* ================= QUOTE ================= */
+
+.quote {
+    padding: 100px 25px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(20,91,50,0.75),
+            rgba(20,91,50,0.75)
+        ),
+        url("https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.quote h2 {
+    max-width: 850px;
+    margin: auto;
+    font-size: 32px;
+}
+
+/* ================= CTA ================= */
+
+.cta {
+    background: white;
+}
+
+.cta-box {
+    background: #eaf6ed;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.cta-box h2 {
+    color: #176b3a;
+    margin-bottom: 12px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #123d27;
+    color: white;
+
+    padding: 45px 25px;
+
+    text-align: center;
+}
+
+footer p {
+    color: #cbdcd1;
+}
+
+.back-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: white;
+
+    color: #176b3a;
+
+    padding: 11px 22px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .material-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 60px 18px;
+    }
+
+    .quote h2 {
+        font-size: 25px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<div class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+🌱
+</div>
+
+<div class="logo-text">
+
+<h2>HopeBridge Foundation</h2>
+
+<p>Building a Better Future Together</p>
+
+</div>
+
+</div>
+
+
+<nav>
+
+<a href="../index.html">
+Home
+</a>
+
+<a href="../index.html#documents">
+Documents
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<span class="badge">
+🌍 KNOWLEDGE • AWARENESS • ACTION
+</span>
+
+<h1>
+Awareness Materials
+</h1>
+
+<p>
+Learn, share and take action to create a healthier,
+better and more responsible community.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ================= INTRODUCTION ================= -->
+
+<section class="intro">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+📚 Creating Awareness for Positive Change
+</h2>
+
+<p>
+Knowledge can inspire individuals and communities
+to make positive changes.
+</p>
+
+</div>
+
+
+<div class="intro-box">
+
+<h3>
+🌱 Why Awareness Matters
+</h3>
+
+<p>
+
+Awareness helps people understand important issues,
+make informed decisions and participate actively
+in their communities.
+
+HopeBridge Foundation promotes awareness through
+education, environmental activities and health
+initiatives.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= MATERIALS ================= -->
+
+<section class="materials">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>
+📖 Explore Our Awareness Materials
+</h2>
+
+<p>
+Choose a topic below to explore the complete
+awareness resource.
+</p>
+
+</div>
+
+
+<div class="material-grid">
+
+
+<!-- ================= EDUCATION ================= -->
+
+<div class="material-card">
+
+<div class="material-icon">
+🎓
+</div>
+
+<h3>
+Education Awareness
+</h3>
+
+<p>
+
+Learn about the importance of education, learning
+opportunities and how knowledge can create a
+better future.
+
+</p>
+
+<a
+href="Education%20awareness.html"
+class="read-button">
+
+Read Material →
+
+</a>
+
+</div>
+
+
+<!-- ================= ENVIRONMENT ================= -->
+
+<div class="material-card">
+
+<div class="material-icon">
+🌳
+</div>
+
+<h3>
+Environmental Awareness
+</h3>
+
+<p>
+
+Discover simple ways to protect nature, maintain
+clean surroundings and encourage responsible
+environmental practices.
+
+</p>
+
+<a
+href="Environmental%20Awareness.html"
+class="read-button">
+
+Read Material →
+
+</a>
+
+</div>
+
+
+<!-- ================= HEALTH ================= -->
+
+<div class="material-card">
+
+<div class="material-icon">
+🩺
+</div>
+
+<h3>
+Health Awareness
+</h3>
+
+<p>
+
+Learn about healthy habits, personal hygiene and
+simple practices that can support healthier
+communities.
+
+</p>
+
+<a
+href="Health%20awarness.html"
+class="read-button">
+
+Read Material →
+
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= QUOTE ================= -->
+
+<section class="quote">
+
+<h2>
+
+“Awareness creates understanding,
+and understanding creates positive change.”
+
+</h2>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<div class="cta-box">
+
+<h2>
+🤝 Learn • Share • Inspire
+</h2>
+
+<p>
+
+Explore our awareness resources and help spread
+useful knowledge within your community.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>
+🌱 HopeBridge Foundation
+</h3>
+
+<p>
+Building a Better Future Together
+</p>
+
+<a
+href="../index.html"
+class="back-button">
+
+← Back to Main Website
+
+</a>
+
+<p style="margin-top:25px;font-size:13px;">
+
+© 2026 HopeBridge Foundation
+
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
