@@ -15,6 +15,7 @@ Our Tree Plantation Drive encouraged volunteers and community members to take pa
 ### 📷 Event Moments
 
 - 🌱 Volunteers planting saplings
+
 - 🪴 Participants preparing the soil
 - 💧 Volunteers watering plants
 - 🤝 Group photo after the activity
@@ -28,9 +29,17 @@ The Education Awareness Camp encouraged students and parents to understand the i
 ### 📷 Event Moments
 
 - 🎓 Students participating in the camp
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/d8230e49-34cd-4522-b53c-4353aabe6d3f" />
+
 - 👩‍🏫 Volunteers providing study guidance
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/29478cf7-296b-4cc8-9bcb-e70daf9c68b5" />
+
 - 📚 Educational materials being shared
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/d3cfe183-2836-424f-987e-97e3bdb21a3f" />
+
 - 🤝 Group learning activity
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/62b57c7d-8475-4836-beeb-ba04507ac56b" />
+
 
 ---
 
@@ -41,6 +50,7 @@ Health awareness activities helped community members understand healthy habits, 
 ### 📷 Event Moments
 
 - 🩺 Health awareness session
+
 - ❤️ Community health education
 - 🧼 Personal hygiene awareness
 - 👥 Volunteers interacting with participants
