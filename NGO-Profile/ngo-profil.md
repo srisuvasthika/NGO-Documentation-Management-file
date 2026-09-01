@@ -12,6 +12,9 @@
 ## 👁️ Vision
 
 To build a stronger and more caring community ❤️ where everyone has access to opportunities, knowledge, and support. 🌍✨
+ <img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/a3f8e5fb-d191-40aa-9979-3cef8618e982" />
+
+
 
 ## 🎯 Mission
 
