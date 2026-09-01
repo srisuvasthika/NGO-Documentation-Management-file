@@ -54,6 +54,10 @@ The NGO focuses on supporting:
 - 🏘️ Community members
 - 🤝 Volunteers
 
+## 🤝 Community Impact
+
+HopeBridge Foundation aims to create a positive impact in the community by encouraging volunteers to participate in social activities and by promoting education, health awareness, and environmental responsibility.
+
 ## 📞 Contact Information
 
 *📧 Email:* hopebridge.foundation@example.com  
