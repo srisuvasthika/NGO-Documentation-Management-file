@@ -41,7 +41,8 @@
    ---
 
   ##  Decisions Taken
-    1. An education awareness progam will be  organized.
+  
+    1.An education awareness progam will be  organized.
     2. A tree plantation activity will be planned.
     3. Health awareness materials will be prepared.
     4. Volunteers will be asssigned different responsibilities.
@@ -49,3 +50,40 @@
     ---
 
   ## Responsibilites
+
+  |Responsibility|Assigned To|
+  |---|---|
+  |Education Program|EnvironmentTeam|
+  |Tree Plantation|EnvironmentTeam|
+  |Health Awareness|Health Team|
+  |Awareness Materials|Documentation Team|
+  |Volunteer Coordination|Volunteer Team|
+
+  ---
+
+  ## Action items
+
+  - prepare educational materials.
+  - prepare health awareness content.
+  - Arrange plants and necessary materials.
+  - contact volunteers.
+  - Finalize the event schedule.
+
+---
+
+## Conclusion
+
+The meeting concluded with a clear plan for upcoming activities.
+
+All members agreed to work together to support the mission of *Hope Bridge Foundation* and create a positive impact in the community.
+
+**"Together, We can create positive change".**
+
+---
+*Prepared by:*
+
+Documentation Team
+
+*Organization:*
+
+HopeBridge Foundation
