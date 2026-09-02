@@ -50,10 +50,17 @@ Health awareness activities helped community members understand healthy habits, 
 ### 📷 Event Moments
 
 - 🩺 Health awareness session
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/b76d3083-3fb2-4ac5-87bf-c16a8d2908a7" />
 
 - ❤️ Community health education
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/67944126-3307-42e6-b9cc-9eed12bee868" />
+
 - 🧼 Personal hygiene awareness
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/275e70b0-3b02-4ea5-b23a-66b919442d55" />
+
 - 👥 Volunteers interacting with participants
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/116b45ca-591c-415c-9a6f-cc4d0e0ff8d0" />
+
 
 ---
 
@@ -64,9 +71,16 @@ Our volunteers contribute their time and effort to support HopeBridge Foundation
 ### 📷 Event Moments
 
 - 🤝 Volunteers working together
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/7f208630-5f91-4587-9a63-1fec5b5a478a" />
+
 - 👥 Community service activities
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/c3730f4f-41ed-4915-b7da-9c089e56ecb7" />
+
 - 🌱 Volunteers supporting environmental programs
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/fb74a8e0-04e6-405f-802a-8c7f37d7fa58" />
+
 - ❤️ Volunteer teamwork
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/a1c58ea9-8ee1-4ddf-ab81-c7d030a3763b" />
 
 ---
 
