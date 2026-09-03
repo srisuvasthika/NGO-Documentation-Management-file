@@ -15,11 +15,16 @@ Our Tree Plantation Drive encouraged volunteers and community members to take pa
 ### 📷 Event Moments
 
 - 🌱 Volunteers planting saplings
-
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/cc22e0b0-e4b0-4a25-871f-5e501f3402fb" />
 
 - 🪴 Participants preparing the soil
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/569da2fb-e150-42af-bed1-dbfef3aae271" />
+
 - 💧 Volunteers watering plants
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/2956e86c-7b23-4108-9b14-23b85a6017f4" />
+
 - 🤝 Group photo after the activity
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/ce387fbd-5b4e-4f53-aa0c-84df745c788f" />
 
 ---
 
@@ -92,8 +97,14 @@ HopeBridge Foundation brings community members together through educational, env
 ### 📷 Event Moments
 
 - 🌍 Community gathering
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/8fbad6e6-a382-4a1c-b925-011a8a59e0a1" />
+
 - 📢 Awareness campaign
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/6e0dc7ad-3c30-4e1e-9fb2-7646a62c28ab" />
+
 - 🤝 Social service activity
+<img width="300" height="200" alt="image" src="https://github.com/user-attachments/assets/70a59e4e-6ac7-4e24-a390-988d15dd8bbf" />
+
 - 👨‍👩‍👧‍👦 Community participation
 
 ---
